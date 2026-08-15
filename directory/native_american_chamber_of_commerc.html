@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Native American Chamber of Commerce of Illinois - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Native American Chamber of Commerce of Illinois</h1>
+<p class="lede">The Native American Chamber of Commerce of Illinois (NACC-IL) exists to: provide business education and growth opportunities specific to Native Americans; provide a mentor&#x27;s environment for those individuals beginning new endeavors and expanding their company; provide opportunities for networking and support of American Indian business people in Illinois.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.nacc-il.org" rel="noopener nofollow">https://www.nacc-il.org</a></td></tr><tr><td>Telephone</td><td>(630) 926-1700</td></tr><tr><td>Courriel</td><td>info@nacc-il.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">9</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Native American Chamber of Commerce of Illinois (chamber/association)</h3><span class="tag">Demographically Based</span><p>NACC-IL is itself a demographically-based chamber of commerce whose core offering is organizing and advocating for Native American/American Indian business owners in Illinois.</p><blockquote>provide opportunities for networking and support of American Indian business people in Illinois</blockquote><div class="meta"><a href="https://www.nacc-il.org/mission-objectives-beliefs" rel="noopener nofollow">https://www.nacc-il.org/mission-objectives-beliefs</a></div></div>
+<div class="svc"><h3>Mentoring for New and Expanding Native American Business Owners</h3><span class="tag">Formal Mentoring Programs</span><span class="tag">Peer Mentoring</span><p>NACC-IL provides a mentoring environment connecting established business owners with those starting or growing a Native American-owned business.</p><blockquote>provide a mentor&#x27;s environment for those individuals beginning new endeavors and expanding their company</blockquote><div class="meta"><a href="https://www.nacc-il.org/mission-objectives-beliefs" rel="noopener nofollow">https://www.nacc-il.org/mission-objectives-beliefs</a></div></div>
+<div class="svc"><h3>NACC-IL Certified American Indian Business Certification</h3><span class="tag">Certification</span><p>NACC-IL runs its own annual-renewal certification process for American Indian-owned businesses.</p><blockquote>There is a fee to certify your business.</blockquote><div class="meta"><a href="https://www.nacc-il.org/business-types-and-certification" rel="noopener nofollow">https://www.nacc-il.org/business-types-and-certification</a></div></div>
+<div class="svc"><h3>Business Counseling &amp; Path to Starting a Business Guide</h3><span class="tag">Startup Business Counseling</span><p>NACC-IL provides its own members and other American Indian entrepreneurs with guidance to help them start a new business or improve an existing one, including a detailed &quot;Path to Starting a Business&quot; walkthrough covering planning, incorporation, and financing steps.</p><blockquote>The NACC-IL is a great resource for American Indians to use to start their own business or to improve an existing business.</blockquote><div class="meta"><a href="https://www.nacc-il.org/starting-a-business" rel="noopener nofollow">https://www.nacc-il.org/starting-a-business</a></div></div>
+<div class="svc"><h3>Starting Your Business Counseling</h3><span class="tag">Startup Business Counseling</span><p>NACC-IL provides pro bono counseling on the viability of a business idea and business plan development for those starting a business.</p><blockquote>Starting your business
+a)       Viability of business idea/ chances for success
+b)      Business plan</blockquote><div class="meta"><a href="https://www.nacc-il.org/what-we-do" rel="noopener nofollow">https://www.nacc-il.org/what-we-do</a></div></div>
+<div class="svc"><h3>Business Financing Assistance</h3><span class="tag">Debt Funding Preparation</span><p>NACC-IL helps American Indian entrepreneurs access capital and formulate loan packages to finance their businesses.</p><blockquote>Financing your business
+a)       Access to capital
+b) Formulate loan package</blockquote><div class="meta"><a href="https://www.nacc-il.org/what-we-do" rel="noopener nofollow">https://www.nacc-il.org/what-we-do</a></div></div>
+<div class="svc"><h3>Business Growth &amp; Development Services</h3><span class="tag">Business Management Training</span><p>NACC-IL offers organizational development, marketing, and accounting services support to help member businesses grow.</p><blockquote>Growing your business
+a)       Organizational development
+b)      Marketing
+c)       Accounting services</blockquote><div class="meta"><a href="https://www.nacc-il.org/what-we-do" rel="noopener nofollow">https://www.nacc-il.org/what-we-do</a></div></div>
+<div class="svc"><h3>Business Training / Webinars</h3><span class="tag">Online Courses and Videos</span><p>NACC-IL runs webinars and classes covering all elements of running a business.</p><blockquote>Business training
+a)       Webinars/ classes for all elements of your business</blockquote><div class="meta"><a href="https://www.nacc-il.org/what-we-do" rel="noopener nofollow">https://www.nacc-il.org/what-we-do</a></div></div>
+<div class="svc"><h3>Contracting Opportunities Assistance</h3><span class="tag">Obtaining Government Contracts</span><p>NACC-IL helps businesses pursue contracting opportunities with federal, state, county, municipal, and tribal entities.</p><blockquote>Contracting opportunities
+a)       Federal, State, County, Municipalities, Tribal</blockquote><div class="meta"><a href="https://www.nacc-il.org/what-we-do" rel="noopener nofollow">https://www.nacc-il.org/what-we-do</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

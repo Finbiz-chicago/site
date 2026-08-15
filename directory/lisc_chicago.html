@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Local Initiatives Support Corporation (LISC) - LISC Chicago - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Local Initiatives Support Corporation (LISC) - LISC Chicago</h1>
+<p class="lede">LISC Chicago is the local affiliate of the national Local Initiatives Support Corporation, providing grants, loans, and technical assistance to community organizations and small businesses in low- and moderate-income Chicago neighborhoods.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.lisc.org/chicago/" rel="noopener nofollow">https://www.lisc.org/chicago/</a></td></tr><tr><td>Courriel</td><td>llewis@lisc.org</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">8</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>LISC Small Business Lending</h3><span class="tag">Loan Providers</span><span class="tag">Real Estate Finance</span><p>LISC Chicago provides grants, loans, and technical assistance to small business entrepreneurs facing barriers to ownership and growth, including a suite of commercial and real estate loan products.</p><blockquote>LISC is helping to close these gaps by providing grants, loans, and technical assistance to entrepreneurs who face persistent barriers to business ownership and growth.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/our-work/economic-development/small-business/" rel="noopener nofollow">https://www.lisc.org/chicago/our-work/economic-development/small-business/</a></div></div>
+<div class="svc"><h3>Entrepreneurs of Color Fund</h3><span class="tag">Grant Funding Providers</span><span class="tag">Loan Providers</span><p>The Entrepreneurs of Color Fund is listed by LISC Chicago as additional small business support alongside LISC Small Business Lending, offering capital access to entrepreneurs facing barriers to ownership and growth.</p><blockquote>LISC is helping to close these gaps by providing grants, loans, and technical assistance to entrepreneurs who face persistent barriers to business ownership and growth.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/our-work/economic-development/small-business/" rel="noopener nofollow">https://www.lisc.org/chicago/our-work/economic-development/small-business/</a></div></div>
+<div class="svc"><h3>Commercial Corridor Manager Program</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>LISC funds Corridor Managers through its Business Development Organization network to strengthen commercial corridors, reduce vacancy, and link existing local businesses to available economic programs.</p><blockquote>This program strengthens commercial corridors by supporting the growth of diverse local businesses and linking existing enterprises with available economic programs.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/our-work/economic-development/business-development-organizations/" rel="noopener nofollow">https://www.lisc.org/chicago/our-work/economic-development/business-development-organizations/</a></div></div>
+<div class="svc"><h3>Community-Centered Economic Inclusion Planning (CCEI)</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>LISC&#x27;s CCEI process convenes community stakeholders to produce a three-year Economic Inclusion Agenda focused on enhancing business districts, supporting entrepreneurs, and developing local talent.</p><blockquote>work brings together community stakeholders to develop a vision for neighborhood development that centers longtime residents and small business owners.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/our-work/economic-development/community-centered-economic-inclusion-planning-2/" rel="noopener nofollow">https://www.lisc.org/chicago/our-work/economic-development/community-centered-economic-inclusion-planning-2/</a></div></div>
+<div class="svc"><h3>Places (Place-Based Investment Strategy)</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>LISC Chicago runs place-based investment strategies designed to enhance economic vitality and attract private investment in neighborhoods lacking sustained development attention.</p><blockquote>LISC supports place-based investment strategies that enhance economic vitality, attract private investment, and improve quality of life across neighborhoods that have lacked sustained development attention.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/our-work/economic-development/places/" rel="noopener nofollow">https://www.lisc.org/chicago/our-work/economic-development/places/</a></div></div>
+<div class="svc"><h3>Next Generation Capacity Building Initiative (Next Gen)</h3><span class="tag">Business Plan Training and Assistance</span><span class="tag">Loan Providers</span><p>Next Gen is an LISC-administered statewide initiative providing training and one-on-one technical assistance to emerging real estate developers, with graduates eligible to apply for pre-development loans administered by LISC.</p><blockquote>Statewide capacity-building initiative to expand opportunities in the housing development field.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/" rel="noopener nofollow">https://www.lisc.org/chicago/</a></div></div>
+<div class="svc"><h3>Technical Assistance to Partner Organizations</h3><span class="tag">Grant Funding Providers</span><span class="tag">Loan Providers</span><span class="tag">Technical Services</span><p>LISC Chicago delivers technical assistance and other resources to its network of partner community development organizations.</p><blockquote>We provide grants, loans, technical assistance and other resources to more than 70 partner organizations in low- and moderate-income communities across Chicago.</blockquote><div class="meta"><a href="https://www.lisc.org/chicago/about-us/" rel="noopener nofollow">https://www.lisc.org/chicago/about-us/</a></div></div>
+<div class="svc"><h3>Federal Public Policy Advocacy</h3><span class="tag">Small Business Policy</span><p>LISC works with Congress and federal agencies, coordinating with local offices like LISC Chicago, to shape policies and funding sources that support neighborhood revitalization.</p><blockquote>We work with Congress and federal agencies to establish and safeguard funding sources, policies, programs and strategies that spur neighborhood revitalization in urban and rural communities throughout the country.</blockquote><div class="meta"><a href="http://www.lisc.org/our-initiatives/policy-research/policy/" rel="noopener nofollow">http://www.lisc.org/our-initiatives/policy-research/policy/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

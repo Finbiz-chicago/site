@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Community Reinvestment Fund, USA - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Community Reinvestment Fund, USA</h1>
+<p class="lede">We work in partnership to expand economic opportunity for small businesses and communities by reimagining the way capital and resources flow.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://crfusa.com" rel="noopener nofollow">https://crfusa.com</a></td></tr><tr><td>Adresse</td><td>801 Nicollet Mall, Suite 1700 West, Minneapolis, Minnesota 55402</td></tr><tr><td>Telephone</td><td>(800) 475-3050</td></tr><tr><td>Courriel</td><td>humanresources@CRFUSA.com</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">12</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>CRF Lending</h3><span class="tag">Loan Providers</span><p>CRF&#x27;s lending arm provides financing products that directly increase the flow of capital to under-resourced small businesses.</p><blockquote>Leverage our lending products to increase the flow of capital to small businesses.</blockquote><div class="meta"><a href="https://crfusa.com/who-we-work-with/small-businesses/" rel="noopener nofollow">https://crfusa.com/who-we-work-with/small-businesses/</a></div></div>
+<div class="svc"><h3>CRF Loan Servicing</h3><span class="tag">Loan Providers</span><p>CRF directly services small business loans, including commercial real estate and equipment loans, on behalf of lending partners.</p><blockquote>CRF provides servicing for small businesses loans, including commercial real estate, equipment and more.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-services/" rel="noopener nofollow">https://crfusa.com/solutions/crf-services/</a></div></div>
+<div class="svc"><h3>CRF Bond Guarantee Program</h3><span class="tag">Government Funding</span><span class="tag">Loan Providers</span><p>CRF helps community lenders access the U.S. Treasury&#x27;s CDFI Bond Guarantee Program, a source of fixed-rate, long-term, low-cost capital for community revitalization projects, as a qualified bond issuer.</p><blockquote>The U.S. Treasury&#x27;s CDFI Bond Guarantee Program gives eligible CDFIs access to fixed-rate, long-term and low-cost capital.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-services/" rel="noopener nofollow">https://crfusa.com/solutions/crf-services/</a></div></div>
+<div class="svc"><h3>SOAR Fund (Southern Opportunity and Resiliency Fund)</h3><span class="tag">Disaster Loans and Grants</span><span class="tag">Loan Providers</span><p>CRF launched and ran the SOAR Fund, providing affordable financing and free business support to small businesses and nonprofits across the southern and southeastern U.S. to help them recover from COVID-19.</p><blockquote>the Southern Opportunity and Resiliency (SOAR) Fund provided affordable financing and free business support to services to eligible small businesses and nonprofits across the southern and southeastern United States</blockquote><div class="meta"><a href="https://crfusa.com/solutions/programs" rel="noopener nofollow">https://crfusa.com/solutions/programs</a></div></div>
+<div class="svc"><h3>CRF Loan Participation</h3><span class="tag">Loan Providers</span><p>CRF partners with CDFIs to purchase participation shares in small business loans ranging from $100,000 to $1 million, sharing risk and generating servicing fees for the originating lender.</p><blockquote>CRF Loan Participation is designed for CDFIs looking to expand their impact by making more small business loans</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-lending/crf-loan-participation/" rel="noopener nofollow">https://crfusa.com/solutions/crf-lending/crf-loan-participation/</a></div></div>
+<div class="svc"><h3>CRF Loan to Lender</h3><span class="tag">Loan Providers</span><p>CRF provides flexible liquidity (up to $5 million) directly to CDFIs so they can keep originating small business loans while retaining full control of servicing.</p><blockquote>CRF’s Loan to Lender program is designed for CDFIs that need liquidity to continue originating loans when balance sheet capacity is constrained.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-lending/crf-loan-to-lender/" rel="noopener nofollow">https://crfusa.com/solutions/crf-lending/crf-loan-to-lender/</a></div></div>
+<div class="svc"><h3>CRF Bank Referral Program</h3><span class="tag">Loan Providers</span><p>CRF operates a referral portal allowing banks to refer small business customers who need financing beyond what the bank offers, while the bank keeps the relationship.</p><blockquote>You’ll maintain the banking relationship while the small business gains access to the flexible financing and advisory support services provided by CRF</blockquote><div class="meta"><a href="https://crfusa.com/solutions/small-business-referral-programs/" rel="noopener nofollow">https://crfusa.com/solutions/small-business-referral-programs/</a></div></div>
+<div class="svc"><h3>CRF Small Business SBA Referral Program</h3><span class="tag">Loan Providers</span><p>CRF runs a referral partner network for coaches, educators, and other small business advisors to connect clients with CRF financing in exchange for a referral fee.</p><blockquote>Join our network of referral partners and earn a fee when small businesses you work with receive a loan from CRF.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/small-business-referral-programs/" rel="noopener nofollow">https://crfusa.com/solutions/small-business-referral-programs/</a></div></div>
+<div class="svc"><h3>New Markets Tax Credit Program</h3><span class="tag">Tax Credit Providers</span><p>CRF directs federal New Markets Tax Credit allocation authority to manufacturing and industrial businesses that create or retain quality jobs in low-income communities.</p><blockquote>CRF provides access to flexible (gap) financing through the Federal New Markets Tax Credit (NMTC) Program.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-lending/new-markets-tax-credit-program" rel="noopener nofollow">https://crfusa.com/solutions/crf-lending/new-markets-tax-credit-program</a></div></div>
+<div class="svc"><h3>CRF SBA 7(a) – Small Business Loans</h3><span class="tag">Loan Providers</span><p>CRF originates SBA 7(a) term loans between $50,000 and $5,000,000 nationally for commercial real estate, business acquisition, equipment, debt refinance, and working capital.</p><blockquote>Working in tandem with community partners, the CRF team combines exceptional customer service with the traditional benefits offered by the SBA 7(a) program</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-lending/small-business-loans/" rel="noopener nofollow">https://crfusa.com/solutions/crf-lending/small-business-loans/</a></div></div>
+<div class="svc"><h3>MyPace Capital</h3><span class="tag">Loan Providers</span><p>A flexible working-capital loan product ($100,500-$500,000, 5-year fixed rate) with principal paydowns tied to monthly revenue and included business advisory support.</p><blockquote>MyPace Capital provides small businesses flexible financing up to $500k for working capital to navigate revenue fluctuations, seasonality and to support growth.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-lending/mypace-capital" rel="noopener nofollow">https://crfusa.com/solutions/crf-lending/mypace-capital</a></div></div>
+<div class="svc"><h3>Loan Origination</h3><span class="tag">Loan Providers</span><p>CRF&#x27;s underwriting professionals work with community lenders to administer small business loan programs and products.</p><blockquote>Community lenders can work with the seasoned small business underwriting professionals at CRF to administer small business loan programs and products.</blockquote><div class="meta"><a href="https://crfusa.com/solutions/crf-services/fund-administration" rel="noopener nofollow">https://crfusa.com/solutions/crf-services/fund-administration</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

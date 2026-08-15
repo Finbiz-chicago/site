@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Allies for Community Business - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Allies for Community Business</h1>
+<p class="lede">Allies for Community Business provides the capital, coaching, and connections entrepreneurs need to grow great businesses that create jobs and wealth in their communities.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://a4cb.org" rel="noopener nofollow">https://a4cb.org</a></td></tr><tr><td>Adresse</td><td>135 N Kedzie Ave, Chicago, IL 60612</td></tr><tr><td>Telephone</td><td>(312) 275-3000</td></tr><tr><td>Courriel</td><td>info@a4cb.org</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">15</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Loans</h3><span class="tag">Loan Providers</span><span class="tag">Microloan Providers</span><p>A4CB provides term loans and lines of credit from $500 to $500,000 to early, emerging, and established businesses in Illinois and Indiana, using cash-flow-based underwriting instead of credit scores.</p><blockquote>Allies for Community Business offers term loans and lines of credit between $500 and $500,000 to early, emerging, and established businesses in Illinois and Indiana.</blockquote><div class="meta"><a href="https://a4cb.org/services/loans/" rel="noopener nofollow">https://a4cb.org/services/loans/</a></div></div>
+<div class="svc"><h3>Revenue-Based Financing</h3><span class="tag">Revenue Based Financing (i.e. factoring)</span><p>A4CB offers revenue-based financing loans of $50,000 to $500,000 where repayment is a fixed percentage of monthly revenue rather than a fixed payment.</p><blockquote>Allies for Community Business offers revenue-based financing loans between $50,000 and $500,000 to established businesses who have a clear plan for growth</blockquote><div class="meta"><a href="https://a4cb.org/services/loans/" rel="noopener nofollow">https://a4cb.org/services/loans/</a></div></div>
+<div class="svc"><h3>Commercial Corridor Storefront Activation (CCSA) Program</h3><span class="tag">Grant Funding Providers</span><p>Jointly administered by the Chicago Department of Planning and Development and A4CB, CCSA provides reimbursable grants for capital improvements plus wraparound technical assistance to corridor businesses.</p><blockquote>The CCSA program offers reimbursable grants to small businesses and property owners for capital improvements to vacant and existing commercial spaces</blockquote><div class="meta"><a href="https://a4cb.org/services/grants/" rel="noopener nofollow">https://a4cb.org/services/grants/</a></div></div>
+<div class="svc"><h3>Neighborhood Entrepreneurship Lab (NEL)</h3><span class="tag">Formal Mentoring Programs</span><p>A4CB runs the Neighborhood Entrepreneurship Lab, a nine-month cohort program pairing selected community business owners with investors, advisors, and strategists to execute a growth initiative, including a $20,000 growth grant.</p><blockquote>NEL pairs community business owners with investors, advisors, project strategists, community liaisons, and corporate liaisons who provide intensive support for nine months</blockquote><div class="meta"><a href="https://a4cb.org/services/neighborhood-entrepreneurship-lab/" rel="noopener nofollow">https://a4cb.org/services/neighborhood-entrepreneurship-lab/</a></div></div>
+<div class="svc"><h3>Kitchen Space (The Hatchery)</h3><span class="tag">Commercial Kitchen Facilities</span><span class="tag">Incubator</span><p>A4CB co-owns and co-operates The Hatchery, a 67,000-square-foot food and beverage incubator offering leasable private kitchens, shared hourly kitchen spaces, and storage for food entrepreneurs.</p><blockquote>The Hatchery provides a wide range of services and networking opportunities to help food and beverage entrepreneurs at every stage.</blockquote><div class="meta"><a href="https://a4cb.org/services/kitchen-space/" rel="noopener nofollow">https://a4cb.org/services/kitchen-space/</a></div></div>
+<div class="svc"><h3>Host a Community Event at The Hatchery</h3><span class="tag">Conference/Meeting and Event Space</span><p>The Hatchery offers a large event hall, conference room, smaller meeting rooms, and an outdoor plaza that can be reserved for community events.</p><blockquote>Large event hall with capacity for 200 guests</blockquote><div class="meta"><a href="https://a4cb.org/services/kitchen-space/" rel="noopener nofollow">https://a4cb.org/services/kitchen-space/</a></div></div>
+<div class="svc"><h3>Grants Program</h3><span class="tag">Grant Funding Providers</span><p>A4CB has partnered with public and private organizations since April 2020 to distribute grants to small businesses, publishing new grant opportunities and application instructions as they arise.</p><blockquote>Since April of 2020, we have provided over $477M in grants to 23,000 small businesses in Illinois and Indiana.</blockquote><div class="meta"><a href="https://a4cb.org/services/grants/" rel="noopener nofollow">https://a4cb.org/services/grants/</a></div></div>
+<div class="svc"><h3>1:1 Business Coaching</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>A4CB provides free one-on-one business coaching starting with a business evaluation, then ongoing individualized guidance on goal-setting, financial planning, and growth topics tailored to the business&#x27;s stage.</p><blockquote>Assessment Any entrepreneur seeking assistance from A4CB will begin with a business assessment.</blockquote><div class="meta"><a href="https://a4cb.org/services/one-on-one-coaching/" rel="noopener nofollow">https://a4cb.org/services/one-on-one-coaching/</a></div></div>
+<div class="svc"><h3>Business Licensing Assistance</h3><span class="tag">Registration, Licenses and Permits</span><p>As one of Chicago&#x27;s eight Business Centers, A4CB helps business owners apply for a wide range of Chicago business licenses through Chicago Business Direct without visiting City Hall.</p><blockquote>Donate Connect Connect with us Shop our marketplace Refer an entrepreneur Attend an event Read our updates Join our team Contact 135 N Kedzie Ave Chicago, IL 60612 (312)-275-3000 info@a4cb.org Follow Facebook LinkedIn Twitter Instagram Join our newsletter to stay up to date!</blockquote><div class="meta"><a href="https://a4cb.org/services/licensing/" rel="noopener nofollow">https://a4cb.org/services/licensing/</a></div></div>
+<div class="svc"><h3>Larger Contracts / MBE-WBE Certification Assistance</h3><span class="tag">Obtaining Certification</span><span class="tag">Obtaining Corporate Contracts</span><p>A4CB helps minority- and women-owned businesses obtain MBE/WBE certification with the City of Chicago, Cook County, and State of Illinois, then connects them with institutional buyers such as government departments, hospitals, and corporations for larger contracts.</p><blockquote>If you are a minority- or women-owned business, we will help you secure the certification you need to bid for these contracts.</blockquote><div class="meta"><a href="https://a4cb.org/services/larger-contracts/" rel="noopener nofollow">https://a4cb.org/services/larger-contracts/</a></div></div>
+<div class="svc"><h3>Volunteer Business Strategist Program</h3><span class="tag">Peer Mentoring</span><p>A4CB recruits and matches volunteer bankers, consultants, and business experts as Business Strategists who provide ongoing strategy and execution assistance to entrepreneurs requesting longer-term support.</p><blockquote>volunteer Business Strategists listens carefully to what the paired community business owner is attempting to achieve, asks thoughtful and clarifying questions</blockquote><div class="meta"><a href="https://a4cb.org/volunteer-business-strategist/" rel="noopener nofollow">https://a4cb.org/volunteer-business-strategist/</a></div></div>
+<div class="svc"><h3>Chicago Business Center Free Licensing Counseling</h3><span class="tag">Registration, Licenses and Permits</span><p>A4CB serves as one of eight City of Chicago Business Centers, providing free counseling on business licensing and other topics.</p><blockquote>continuamos sirviendo como uno de los ocho Chicago Business Centers que proporcionan asesoría gratuita sobre licencias y otros temas</blockquote><div class="meta"><a href="https://a4cb.org/es/" rel="noopener nofollow">https://a4cb.org/es/</a></div></div>
+<div class="svc"><h3>Cook County Source Grow Grant Program Administration</h3><span class="tag">Grant Funding Providers</span><p>A4CB administers the Cook County Source Grow Grant program in partnership with the Women&#x27;s Business Development Center and provides free advising to county businesses.</p><blockquote>Sign Up Heray Spice Mohammad Salehi The Cook County Source Grant provided critical funding that enabled us to invest in our inventory and more.</blockquote><div class="meta"><a href="https://a4cb.org/services/grants/" rel="noopener nofollow">https://a4cb.org/services/grants/</a></div></div>
+<div class="svc"><h3>West Side United Small Business Grant Fund (Fiscal Agent)</h3><span class="tag">Grant Funding Providers</span><p>A4CB acts as fiscal agent for the West Side United small business grant fund, a collaboration with hospital sponsors and JPMorgan Chase, distributing acceleration grants to West Side Chicago businesses.</p><blockquote>Since April of 2020, we have provided over $477M in grants to 23,000 small businesses in Illinois and Indiana.</blockquote><div class="meta"><a href="https://a4cb.org/services/grants/" rel="noopener nofollow">https://a4cb.org/services/grants/</a></div></div>
+<div class="svc"><h3>Illinois Pandemic Response Grant and Loan Administration</h3><span class="tag">Disaster Loans and Grants</span><p>With the Illinois Department of Commerce and Economic Opportunity, A4CB administered pandemic-response hospitality grants, emergency loans, business interruption grants, and Back to Business grants for small businesses statewide.</p><blockquote>Since April of 2020, we have provided over $477M in grants to 23,000 small businesses in Illinois and Indiana.</blockquote><div class="meta"><a href="https://a4cb.org/services/grants/" rel="noopener nofollow">https://a4cb.org/services/grants/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

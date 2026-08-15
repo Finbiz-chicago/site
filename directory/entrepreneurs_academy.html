@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrepreneurs Academy - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Entrepreneurs Academy</h1>
+<p class="lede">Provide pathways to entrepreneurship, workforce modernization, and innovation for under-resourced communities of color to create a safer, healthier, and more economically-inclusive world.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://entrepreneursacademy.net" rel="noopener nofollow">https://entrepreneursacademy.net</a></td></tr><tr><td>Adresse</td><td>4950 W Thomas St, Chicago, IL 60651</td></tr><tr><td>Telephone</td><td>(773) 295-5365</td></tr><tr><td>Courriel</td><td>info@entrepreneursacademy.net</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">11</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Fast Launch Entrepreneurial Education &amp; Training (FLEET)</h3><span class="tag">Business Plan Consulting</span><span class="tag">Startup Business Counseling</span><span class="tag">Startup Classes</span><p>A signature 12-week program using the Business Model Canvas and lean startup methods to help entrepreneurs define their business model, price offerings, and build a launch or growth action plan and budget.</p><blockquote>Our 12-week FLEET program is designed for emerging and existing entrepreneurs who are ready to confidently launch or grow their business.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/fleet/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/fleet/</a></div></div>
+<div class="svc"><h3>EA Mentorship Program</h3><span class="tag">Formal Mentoring Programs</span><span class="tag">One-on-One Counseling</span><p>A formal mentorship program pairing entrepreneurs with experienced mentors for one-on-one sessions, workshops, resource access, and networking events.</p><blockquote>Our Mentorship Program is designed to provide you with the expertise, tools, and community you need to scale new heights in your entrepreneurial journey.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/join-eas-mentorship-program/" rel="noopener nofollow">https://entrepreneursacademy.net/join-eas-mentorship-program/</a></div></div>
+<div class="svc"><h3>1 on 1 Counseling / Mentoring Assistance</h3><span class="tag">One-on-One Counseling</span><p>Free personalized one-hour counseling and technical assistance sessions with EA advisors and mentors tailored to a participant&#x27;s entrepreneurial needs.</p><blockquote>Our advisors and mentors at Entrepreneurs Academy are here to help you succeed</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/consultation/" rel="noopener nofollow">https://entrepreneursacademy.net/consultation/</a></div></div>
+<div class="svc"><h3>Master Class Workshops Series</h3><span class="tag">Budget, Cash Flow and Financial Statements Training</span><span class="tag">Business Management Training</span><p>An interactive workshop series covering business planning, market analysis, financial management, and strategic decision-making for launching, managing and growing a business.</p><blockquote>The Master Class Workshops Series is a comprehensive and transformative program designed to equip aspiring entrepreneurs with essential knowledge and practical skills to successfully navigate the world of business.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/master-class-workshops/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/master-class-workshops/</a></div></div>
+<div class="svc"><h3>Business Foundation Bootcamp (Course 3)</h3><span class="tag">Feasibility Studies</span><span class="tag">Startup Business Counseling</span><p>A multi-week course teaching participants to develop, test, and refine a business idea and build a business model before writing a business plan.</p><blockquote>The final course of our 3-course program, Business Foundation Bootcamp.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/master-class-workshops/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/master-class-workshops/</a></div></div>
+<div class="svc"><h3>The Pulse Workshop Series</h3><span class="tag">Leadership/Professional Development</span><p>A leadership development series for entrepreneurs, nonprofit leaders and professionals focused on strengthening internal leadership capacity and moving ideas to measurable impact.</p><blockquote>The Pulse Workshop Series is a dynamic leadership and strategic development experience led by Entrepreneurs Academy&#x27;s President &amp; CEO.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/master-class-workshops/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/master-class-workshops/</a></div></div>
+<div class="svc"><h3>The CWI Wealth Building Lab</h3><span class="tag">Budget, Cash Flow and Financial Statements Training</span><p>A results-driven financial wellness program helping participants build wealth, reduce debt, and strengthen their financial foundation through guided instruction and personalized planning.</p><blockquote>The CWI Building Lab is an interactive, results-driven program designed to help participants develop practical strategies for building wealth, reducing debt, increasing savings, and creating long-term financial stability.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/master-class-workshops/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/master-class-workshops/</a></div></div>
+<div class="svc"><h3>Credit Building &amp; Financial Literacy Support</h3><span class="tag">Budget, Cash Flow and Financial Statements Training</span><p>Financial literacy training and credit repair strategy coaching to help program participants improve their credit scores in preparation for financing.</p><blockquote>Entrepreneurs Academy helps program participants improve their credit scores through financial literacy training and credit repair strategies.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/access-to-capital/" rel="noopener nofollow">https://entrepreneursacademy.net/access-to-capital/</a></div></div>
+<div class="svc"><h3>Drones I, II &amp; III Training Program</h3><span class="tag">Trade Education and Training</span><p>A three-part drone training program covering drone piloting fundamentals, FAA Part 107 commercial certification test preparation, and video editing/production for commercial drone use.</p><blockquote>Welcome to our Comprehensive Drone Training Program, a three-part class that will take you on an exciting journey into the world of drones!</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/registration/drones-i-ii/" rel="noopener nofollow">https://entrepreneursacademy.net/registration/drones-i-ii/</a></div></div>
+<div class="svc"><h3>Justice Impacted Scholarships &amp; Coaching</h3><span class="tag">Re-Entry Support</span><p>Free scholarships, business coaching, and mental wellness services offered directly by Entrepreneurs Academy to justice-impacted individuals seeking to restart their entrepreneurial journey.</p><blockquote>We offer free scholarships for all our programs, coaching and mental wellness services to those who are justice impacted.</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/justice-impacted/" rel="noopener nofollow">https://entrepreneursacademy.net/justice-impacted/</a></div></div>
+<div class="svc"><h3>3D Printing Lab / Program</h3><span class="tag">Makerspace / Hackerspace</span><p>Entrepreneurs Academy operates a free 3D printing makerspace on Chicago&#x27;s West Side, open to entrepreneurs and artists, and also runs 3D Printing classes as a named Program.</p><blockquote>Established first 3D printing lab on the Westside of Chicago available to entrepreneurs and artists free of charge</blockquote><div class="meta"><a href="https://entrepreneursacademy.net/team/philip-fairweather/" rel="noopener nofollow">https://entrepreneursacademy.net/team/philip-fairweather/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

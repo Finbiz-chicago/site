@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>National Black MBA Association, Chicago Chapter - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>National Black MBA Association, Chicago Chapter</h1>
+<p class="lede">The National Black MBA Association leads in the creation of educational opportunities and economic growth for African Americans. Providing innovative programs to stimulate their intellectual and economic growth. Building partnerships with key stakeholders who help facilitate this growth. Increasing awareness and facilitating access to graduate management education programs and career opportunities in management fields.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.chicagochapternbmbaa.org/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/</a></td></tr><tr><td>Adresse</td><td>P.O. Box 8513, Chicago, IL 60680</td></tr><tr><td>Courriel</td><td>partnerships@ccnbmbaa.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">6</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>National Black MBA Association, Chicago Chapter (professional association)</h3><span class="tag">Demographically Based</span><p>The chapter itself functions as a professional association connecting Black business executives, entrepreneurs, educators, and students in the Chicago area to advance Black business effectiveness.</p><blockquote>The CCNBMBAA is a professional Organization that serves as a resource for communicating information and ideas among Black Executives, Entrepreneurs, Educators, and Students</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/about-us/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/about-us/</a></div></div>
+<div class="svc"><h3>Entrepreneurship Committee programming</h3><span class="tag">Startup Business Counseling</span><p>Committee-run expert panel workshops that help members starting a business uncover resources and build the skills needed for business ownership.</p><blockquote>This mission will come to life through programs aimed at uncovering powerful resources and developing the skills necessary to make business ownership a reality</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/about-us/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/about-us/</a></div></div>
+<div class="svc"><h3>Career Success Network (resume review and interview coaching)</h3><span class="tag">Recruiting</span><p>A member benefit providing free resume review and interview coaching to help members prepare for career and business opportunities.</p><blockquote>Free resume review and interview coaching via Career Success Network</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/memberships/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/memberships/</a></div></div>
+<div class="svc"><h3>Leaders of Tomorrow (LOT) mentoring program</h3><span class="tag">Youth Entrepreneurship Education</span><p>A chapter-run mentoring program for high school students designed to build a path from high school through graduate school and into business careers.</p><blockquote>The Leaders of Tomorrow (LOT) program for high school students offers mentoring from chapter volunteers</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/about-us/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/about-us/</a></div></div>
+<div class="svc"><h3>Annual Summer Intern Reception</h3><span class="tag">Internship Program</span><p>A chapter-hosted reception connecting local interns and employers to discuss issues affecting minorities and corporations.</p><blockquote>The Annual Summer Intern reception provides an opportunity for local interns and employers to gain insight on current issues affecting minorities and corporations</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/about-us/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/about-us/</a></div></div>
+<div class="svc"><h3>Professional Development Committee programming</h3><span class="tag">Leadership/Professional Development</span><p>Committee-run professional development programming including face-to-face exchanges with industry experts and exploration of current business trends for members.</p><blockquote>The Professional Development Committee delivers a comprehensive range of relevant programs to meet the needs of our members</blockquote><div class="meta"><a href="https://www.chicagochapternbmbaa.org/about-us/" rel="noopener nofollow">https://www.chicagochapternbmbaa.org/about-us/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

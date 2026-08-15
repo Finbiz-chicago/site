@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greater Ravenswood Chamber of Commerce - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Greater Ravenswood Chamber of Commerce</h1>
+<p class="lede">We are guided by the belief that creativity, sustainable living, and diverse industry position Ravenswood as a destination neighborhood. We create programs and provide services that connect the dots between businesses, residents, non-profit organizations, local government and area schools.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://ravenswoodchicago.org" rel="noopener nofollow">https://ravenswoodchicago.org</a></td></tr><tr><td>Adresse</td><td>1770 West Berteau Ave, Suite 101, Chicago, IL 60613</td></tr><tr><td>Telephone</td><td>(773) 975-2088</td></tr><tr><td>Courriel</td><td>amy@ravenswoodchicago.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">24</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Greater Ravenswood Chamber of Commerce (association)</h3><span class="tag">Geographically Based</span><p>GRCC is the neighborhood chamber of commerce for Greater Ravenswood, representing over 350 local businesses and organizations.</p><blockquote>GRCC connects, supports, and empowers businesses in Ravenswood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/" rel="noopener nofollow">https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/</a></div></div>
+<div class="svc"><h3>Special Service Area #31 (SSA #31) Management</h3><span class="tag">Economic Development</span><span class="tag">Geographically Based</span><span class="tag">Revitalization</span><p>GRCC manages the SSA #31 local tax district, delivering expanded services such as snow removal, litter removal, and facade rebates to businesses along the corridor.</p><blockquote>Established in 2008, the Greater Ravenswood Special Service Area (SSA #31) provides special programs for areas of Clark Street, Damen Avenue, Irving Park Road, Lawrence Avenue, Montrose Avenue, Wilson Avenue, and the Ravenswood Corridor.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/" rel="noopener nofollow">https://ravenswoodchicago.org/about/</a></div></div>
+<div class="svc"><h3>Industrial Corridor Snow Removal</h3><span class="tag">Revitalization</span><p>As part of SSA #31, GRCC provides expanded snow and litter removal services in the Ravenswood Industrial Corridor.</p><blockquote>Expanded city services include snow removal, litter removal, facade rebates, and much more.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/" rel="noopener nofollow">https://ravenswoodchicago.org/about/</a></div></div>
+<div class="svc"><h3>Neighborhood Banner Program</h3><span class="tag">Advertising</span><p>A branded street pole banner advertising program offered by GRCC to give member businesses prime community visibility.</p><blockquote>The Greater Ravenswood Chamber of Commerce’s Neighborhood Banner Program offers businesses prime visibility and connects their organizations to the community.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/marketing-advertising/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/marketing-advertising/</a></div></div>
+<div class="svc"><h3>Manufacturing &amp; Local Industry Support (LIRI services)</h3><span class="tag">Manufacturing Development</span><p>GRCC provides enhanced services to manufacturers and makers in the Ravenswood Industrial Corridor as a delivery partner in the City&#x27;s Local Industrial Retention Initiative.</p><blockquote>we have participated in the Department of Planning and Development’s Local Industrial Retention Initiative by providing enhanced services for manufacturers located in the Ravenswood Industrial Corridor and across Chicago’s north east sector.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Malt Row</h3><span class="tag">Industry Specific</span><p>GRCC&#x27;s own branding and tourism initiative supporting Ravenswood&#x27;s craft beverage manufacturers through marketing, events, and collaboration.</p><blockquote>In 2017, GRCC established Malt Row, a neighborhood branding and tourism initiative designed to support the growing craft beverage industry that has become a defining feature of Ravenswood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Malt Row Committee</h3><span class="tag">Industry Specific</span><p>An industry-specific committee of craft beverage industry leaders convened quarterly by GRCC to discuss collaboration and shared resources.</p><blockquote>To further understand the needs of this industry, we formed a Malt Row Committee that gathers quarterly.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Malt Row Brewery Guide</h3><span class="tag">Advertising</span><p>An annual printed guide published by GRCC promoting Ravenswood&#x27;s craft beverage producers to increase neighborhood tourism.</p><blockquote>For Illinois Craft Beer Week, we publish 10,000 copies of our Malt Row Brewery Guide, a vital tool in increasing neighborhood tourism in Ravenswood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Corridor Infrastructure Assessments</h3><span class="tag">Economic Development</span><p>GRCC staff conduct periodic surveys of the Ravenswood Industrial Corridor to identify infrastructure needs and report them to City partners.</p><blockquote>Several times a year, GRCC’s staff surveys the Ravenswood Industrial Corridor to identify infrastucture needs and issues.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Manufacturing Space Referrals / Industrial Vacancy Database</h3><span class="tag">Site Location Assistance</span><p>GRCC maintains its own database of available M-zoned industrial space and assists companies in finding appropriately zoned space to grow in Ravenswood.</p><blockquote>We actively maintain an Industrial Vacancy Database, including information about available M-zoned space in Ravenswood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Hiring Assistance / Community Job Board</h3><span class="tag">Recruiting</span><p>GRCC operates a free online Community Job Board to help local manufacturing companies fill open positions with local talent.</p><blockquote>To assist businesses in filling open positions with local talent, we maintain an online Community Job Board.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/manufacturing-industry/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/manufacturing-industry/</a></div></div>
+<div class="svc"><h3>Member Health Insurance Program</h3><span class="tag">Insurance Requirements</span><p>GRCC operates its own small business health insurance co-operative, the first offered by a Chicago chamber, giving members access to group-rate coverage.</p><blockquote>In 2018, in response to this growing need, the GRCC launched a small business health insurance co-operative.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/member-health-insurance/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/member-health-insurance/</a></div></div>
+<div class="svc"><h3>Business Resources Compilation</h3><span class="tag">Business Research Resources</span><p>GRCC curates and maintains a compiled resource page connecting business owners to local, City, and Ward-level resources.</p><blockquote>Our Business Resources page connects you with local resources, City of Chicago departmental resources, and neighborhood and Ward information.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/do-business/" rel="noopener nofollow">https://ravenswoodchicago.org/do-business/</a></div></div>
+<div class="svc"><h3>Business-to-Business Referral Program</h3><span class="tag">Small Business/General</span><p>GRCC provides personalized introductions between members through its own business-to-business referral program.</p><blockquote>Strategic, personalized introductions to fellow chamber members through our business-to-business referral program</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/membership-benefits/" rel="noopener nofollow">https://ravenswoodchicago.org/about/membership-benefits/</a></div></div>
+<div class="svc"><h3>Industrial &amp; Manufacturing Business Committee</h3><span class="tag">City Business Issues</span><p>A GRCC advisory committee that assesses industrial business needs and trends and advises the City of Chicago.</p><blockquote>This group serves as an advisory committee to the City of Chicago and helps assess the critical needs, challenges, and trends of the Ravenswood Industrial Corridor.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/" rel="noopener nofollow">https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/</a></div></div>
+<div class="svc"><h3>Zoning &amp; Development Committee</h3><span class="tag">City Business Issues</span><p>A GRCC committee that monitors zoning issues and prepares written statements to the Alderman&#x27;s office on behalf of businesses.</p><blockquote>Members monitor zoning issues in the Ravenswood Industrial Corridor and community at large, attending community meetings, reviewing proposals, and preparing written statements for the Alderman’s office.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/" rel="noopener nofollow">https://ravenswoodchicago.org/about/greater-ravenswood-chamber-of-commerce/</a></div></div>
+<div class="svc"><h3>Ravenswood Façade Rebate Program</h3><span class="tag">Grant Funding Providers</span><span class="tag">Revitalization</span><p>GRCC and SSA #31 offer a rebate covering up to 50% (max $5,000) of costs for local businesses and property owners to upgrade, preserve, or restore their storefronts.</p><blockquote>The Ravenswood Façade Rebate Program provides funding to local businesses and property owners to improve the appearance of their storefronts.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/programs/storefront-improvement/" rel="noopener nofollow">https://ravenswoodchicago.org/programs/storefront-improvement/</a></div></div>
+<div class="svc"><h3>Public Art &amp; Mural Program</h3><span class="tag">Revitalization</span><p>GRCC and SSA #31 fund, organize, or support murals, sculptures, and other public art installations including the Ravenswood Sculpture Garden.</p><blockquote>Together, the Ravenswood Community Council, Greater Ravenswood Chamber of Commerce, and SSA #31 have brought a variety of permanent and temporary works of public art to to our neighborhood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/programs/public-art/" rel="noopener nofollow">https://ravenswoodchicago.org/programs/public-art/</a></div></div>
+<div class="svc"><h3>Ravenswood Security Camera Rebate Program</h3><span class="tag">Grant Funding Providers</span><p>GRCC and SSA #31 provide a one-time rebate of up to 100% of costs (max $1,000) for businesses and property owners installing or upgrading security cameras to deter crime.</p><blockquote>The Ravenswood Security Camera Rebate Program helps local small businesses and property owners install new or upgraded security cameras.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/programs/ravenswood-security-camera-rebate-program/" rel="noopener nofollow">https://ravenswoodchicago.org/programs/ravenswood-security-camera-rebate-program/</a></div></div>
+<div class="svc"><h3>Landscaping &amp; Neighborhood Beautification</h3><span class="tag">Revitalization</span><p>SSA 31 contracts landscaping, holiday decorations, litter removal, and sidewalk sweeping services (including via Cleanslate crews) to beautify the Ravenswood commercial corridors.</p><blockquote>SSA 31 provides and maintains a variety of landscaping elements along our streets.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/programs/neighborhood-beautification/" rel="noopener nofollow">https://ravenswoodchicago.org/programs/neighborhood-beautification/</a></div></div>
+<div class="svc"><h3>Ravenswood People Spaces Project</h3><span class="tag">Revitalization</span><p>GRCC designed and built four permanent placemaking installations along Ravenswood&#x27;s commercial corridors intended to support local businesses and draw visitors.</p><blockquote>The Greater Ravenswood Chamber of Commerce (GRCC) and Special Service Area (SSA) #31 created a series of permanent &quot;People Spaces&quot; in Chicago&#x27;s Ravenswood neighborhood.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/programs/people-spaces-project/" rel="noopener nofollow">https://ravenswoodchicago.org/programs/people-spaces-project/</a></div></div>
+<div class="svc"><h3>Neighborhood Business Development Center (Licensing &amp; Regulatory Assistance)</h3><span class="tag">Economic Development</span><span class="tag">Registration, Licenses and Permits</span><p>As a designated Neighborhood Business Development Center, GRCC offers free one-on-one support to business owners navigating City of Chicago licensing, permitting, and regulatory processes.</p><blockquote>the GRCC provides free assistance to business owners and entrepreneurs navigating City of Chicago licensing, permitting, and other regulatory processes</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/city-of-chicago-business-license-fee-updates-2026/" rel="noopener nofollow">https://ravenswoodchicago.org/city-of-chicago-business-license-fee-updates-2026/</a></div></div>
+<div class="svc"><h3>Business Networking &amp; Educational Events (GRCC)</h3><span class="tag">Small Business/General</span><p>GRCC&#x27;s own ongoing program of educational workshops and networking events for the local business community, with free or discounted member access.</p><blockquote>GRCC hosts educational workshops and networking events in support of our local business community.</blockquote><div class="meta"><a href="https://ravenswoodchicago.org/category/business-events/" rel="noopener nofollow">https://ravenswoodchicago.org/category/business-events/</a></div></div>
+<div class="svc"><h3>Sponsorship &amp; Advertising / Marketing Programs</h3><span class="tag">Advertising</span><p>GRCC-run marketing and event sponsorship/advertising opportunities connecting businesses with the Ravenswood community.</p><blockquote>Connect with Ravenswood neighbors through our marketing programs - learn about event</blockquote><div class="meta"><a href="https://www.ravenswoodchicago.org" rel="noopener nofollow">https://www.ravenswoodchicago.org</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

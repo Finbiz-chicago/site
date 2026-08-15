@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hispanic American Construction Industry Association (HACIA) - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Hispanic American Construction Industry Association (HACIA)</h1>
+<p class="lede">advocate for our members, build their capacity, and connect them with a broad network of diverse professionals and industry leaders</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.haciaworks.org/" rel="noopener nofollow">https://www.haciaworks.org/</a></td></tr><tr><td>Adresse</td><td>650 W. Lake Street, Suite 415, Chicago, IL 60661</td></tr><tr><td>Telephone</td><td>(312) 575-0389</td></tr><tr><td>Courriel</td><td>info@haciaworks.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">19</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Assistant Project Engineer (APE) Program</h3><span class="tag">Student Training</span><span class="tag">Workforce Training</span><p>A grant-funded, no-cost cohort program supported by JPMorganChase that trains participants in construction project coordination, financial literacy, and career readiness for assistant project engineer roles.</p><blockquote>HACIA&#x27;s Assistant Project Engineer (APE) Program prepares participants for careers in construction through hands-on training, industry exposure, professional development, financial literacy, and direct connections to employers</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/assistant-project-engineer-training-program/" rel="noopener nofollow">https://www.haciaworks.org/programs/assistant-project-engineer-training-program/</a></div></div>
+<div class="svc"><h3>Biz Accelerator Program</h3><span class="tag">Business Management Training</span><span class="tag">One-on-One Counseling</span><p>A City of Chicago Department of Housing-funded, 5-month hybrid coaching initiative pairing small and mid-sized construction businesses with subject matter experts for growth and operations support.</p><blockquote>This is a 5-month coaching program that offers group and one-one-one coaching sessions with Subject Matter Experts (SME) in the areas of Finance, Business Operations, Business Development, Marketing, Legal, and Bidding</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/biz-accelerator-program/" rel="noopener nofollow">https://www.haciaworks.org/programs/biz-accelerator-program/</a></div></div>
+<div class="svc"><h3>Clean Energy Contractor Incubator (CECI) Program</h3><span class="tag">Incubator</span><p>An incubator funded by the CEJA Illinois Clean Energy Contractor Incubator Program providing training, mentoring, low-cost capital access, and bonding/insurance support to help contractors enter the clean energy sector.</p><blockquote>designed for contractors and professional services construction companies ready to take their business to another level and enter the booming clean energy sector</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/ceci-program/" rel="noopener nofollow">https://www.haciaworks.org/programs/ceci-program/</a></div></div>
+<div class="svc"><h3>Contractors Development Program</h3><span class="tag">Business Management Training</span><span class="tag">Trade Education and Training</span><p>An open-enrollment, no-cost hybrid training program offering over 20 skill-focused courses covering business development, operations, financial management, and construction management for Illinois residents.</p><blockquote>Contractors Development Program helps construction professionals of all backgrounds acquire the skills needed to successfully grow and scale their construction company</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/contractors-development-program/" rel="noopener nofollow">https://www.haciaworks.org/programs/contractors-development-program/</a></div></div>
+<div class="svc"><h3>Construction Inspection Technician Program</h3><span class="tag">Trade Education and Training</span><span class="tag">Workforce Training</span><p>A grant-funded course combining classroom learning with hands-on experience to prepare students for inspection technician roles in transportation and civil construction, partnered with KAD Engineering.</p><blockquote>HACIA&#x27;s Construction Inspection Technician Program is a no cost to you, grant funded Program for all Illinois residents with an emphasis on women, people of color and veterans</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/construction-inspection-technician/" rel="noopener nofollow">https://www.haciaworks.org/programs/construction-inspection-technician/</a></div></div>
+<div class="svc"><h3>CTA Building Small Businesses (BSB)</h3><span class="tag">Bonding</span><span class="tag">Equity Funding Preparation</span><p>A program launched with Chicago Transit Authority Diversity Programs and Ascend HI offering workshops and no-cost support helping established diverse and small construction firms access capital sourcing, bonding, and DBE certification.</p><blockquote>BSB is an advanced, financial capacity-building program designed to elevate small, diverse construction firms in equity financing and resources</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/cta-building-small-businesses/" rel="noopener nofollow">https://www.haciaworks.org/programs/cta-building-small-businesses/</a></div></div>
+<div class="svc"><h3>FEJA: Introduction to Electrification Pre-Apprenticeship Program</h3><span class="tag">Apprenticeship</span><span class="tag">Trade Education and Training</span><span class="tag">Workforce Training</span><p>A grant-funded pre-apprenticeship combining classroom learning and hands-on experience to launch careers in clean energy and green construction, including NCCER Electrical Level 1 certification.</p><blockquote>This is a no-cost to you, grant-funded program that focuses on giving participants the skills to begin a career in the construction industry with an emphasis on clean energy and green construction jobs</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/feja-program/" rel="noopener nofollow">https://www.haciaworks.org/programs/feja-program/</a></div></div>
+<div class="svc"><h3>Executive Fellows Program</h3><span class="tag">Business Management Training</span><span class="tag">One-on-One Counseling</span><p>Supported by JPMorganChase, this program gives small and medium-sized business owners one-on-one coaching with subject matter experts in finance, development, operations, marketing, and legal.</p><blockquote>This is a cohort-based program that focuses on individualized coaching for small and medium size business owners looking to grow and scale their businesses</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/executivefellows/" rel="noopener nofollow">https://www.haciaworks.org/programs/executivefellows/</a></div></div>
+<div class="svc"><h3>General Construction Pre-Apprenticeship Program</h3><span class="tag">Apprenticeship</span><span class="tag">Workforce Training</span><p>A no-cost, grant-funded 16-week pre-apprenticeship for Illinois residents, with an emphasis on women, people of color, and veterans, preparing them for registered apprenticeships in construction trades.</p><blockquote>This program will prepare you to successfully transition to a Registered Approved Apprenticeship in the trades and other employment opportunities within the construction industry</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/general-construction-pre-apprenticeship/" rel="noopener nofollow">https://www.haciaworks.org/programs/general-construction-pre-apprenticeship/</a></div></div>
+<div class="svc"><h3>OpenRoads/OpenBridge Trainings</h3><span class="tag">Trade Education and Training</span><p>Grant-funded virtual technical trainings covering Bentley OpenRoads and OpenBridge design software, including corridor modeling, plans production, survey, and bridge modeling for MBE/DBE/VBE/WBE businesses.</p><blockquote>HACIA, in collaboration with Civil Solutions, is offering grant-funded OpenRoads and OpenBridge trainings for MBE/DBE/VBE/WBE businesses and employees</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/open-roads-open-bridge/" rel="noopener nofollow">https://www.haciaworks.org/programs/open-roads-open-bridge/</a></div></div>
+<div class="svc"><h3>Renewable Recharge EV Installation Workshop</h3><span class="tag">Trade Education and Training</span><span class="tag">Workforce Training</span><p>A 4-day hands-on training teaching electric vehicle charger installation fundamentals, safety procedures, and load calculation specifications for each charger type.</p><blockquote>This new and innovative program will teach you EV installation fundamentals with a hands-on component</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/renewable-recharge-ev-installation-workshop/" rel="noopener nofollow">https://www.haciaworks.org/programs/renewable-recharge-ev-installation-workshop/</a></div></div>
+<div class="svc"><h3>Safety Training Program</h3><span class="tag">Health and Safety Training</span><p>A safety certification program offering Chicago Scaffold Card, ATSSA Flagger, and OSHA 30 courses to increase earning potential in the construction industry.</p><blockquote>HACIA&#x27;s Safety Training Program, in partnership with LWSC (Latino Workers Safety Council), provides official safety certifications to increase your earning potential in the construction industry</blockquote><div class="meta"><a href="https://www.haciaworks.org/programs/safety-training/" rel="noopener nofollow">https://www.haciaworks.org/programs/safety-training/</a></div></div>
+<div class="svc"><h3>HACIA Scholarship &amp; Education Foundation (HACIASEF)</h3><span class="tag">Trade Education and Training</span><span class="tag">Workforce Training</span><p>A related 501(c)(3) foundation HACIA operates that provides ongoing training and educational services to construction businesses and employees, and awards annual scholarships to students pursuing construction careers.</p><blockquote>HACIASEF awards annual scholarships to deserving students pursuing careers in construction, fostering the next generation of industry leaders</blockquote><div class="meta"><a href="https://www.haciaworks.org/about/" rel="noopener nofollow">https://www.haciaworks.org/about/</a></div></div>
+<div class="svc"><h3>HACIA – Hispanic American Construction Industry Association</h3><span class="tag">Demographically Based</span><span class="tag">Industry Specific</span><p>HACIA is itself a Hispanic-focused construction-industry trade association (501(c)(6)) that advocates for and builds capacity among its member businesses in the construction industry across the Midwest.</p><blockquote>the Hispanic American Construction Industry Association (HACIA) is a 501(c)(6) organization dedicated to ensuring the equitable participation of its members in the construction industry.</blockquote><div class="meta"><a href="https://www.haciaworks.org/about/" rel="noopener nofollow">https://www.haciaworks.org/about/</a></div></div>
+<div class="svc"><h3>Advocacy (Strategic Pillar)</h3><span class="tag">Small Business Policy</span><p>HACIA runs its own advocacy operation, engaging civic bodies and coalitions on behalf of member construction businesses.</p><blockquote>From involvement in key civic bodies to coalition building and action at the grassroots, HACIA has generated a solid track record in advocacy work and established itself as a strong, sound voice in the public arena.</blockquote><div class="meta"><a href="https://www.haciaworks.org/about/" rel="noopener nofollow">https://www.haciaworks.org/about/</a></div></div>
+<div class="svc"><h3>Networking (Strategic Pillar)</h3><span class="tag">Small Business/General</span><p>HACIA operates its own networking function, connecting members to contacts, resources, and opportunities through events and relationships it manages.</p><blockquote>HACIA leverages relationships and influence to connect members to contacts, resources, and opportunities.</blockquote><div class="meta"><a href="https://www.haciaworks.org/about/" rel="noopener nofollow">https://www.haciaworks.org/about/</a></div></div>
+<div class="svc"><h3>Build Capacity (Training Pillar)</h3><span class="tag">Business Management Training</span><span class="tag">Health and Safety Training</span><p>HACIA delivers its own educational resources, workshops, and tailored training covering construction management, safety, financial management, and operations.</p><blockquote>HACIA empowers individuals through educational resources, workshops, and tailored training in construction management, safety, financial management, operations,</blockquote><div class="meta"><a href="https://www.haciaworks.org/about/" rel="noopener nofollow">https://www.haciaworks.org/about/</a></div></div>
+<div class="svc"><h3>Owner-2-CEO Program</h3><span class="tag">Business Management Training</span><span class="tag">Leadership/Professional Development</span><p>HACIA&#x27;s Owner-2-CEO Program helps owners of small, diverse-owned construction businesses grow into stronger operators/leaders of their companies.</p><blockquote>HACIA&#x27;s Executive Director Jacqueline Gomez sat down with WGN Radio&#x27;s Jon Hansen to discuss the Owner-2-CEO Program and how it benefits small, diverse-owned construction businesses</blockquote><div class="meta"><a href="https://www.haciaworks.org/all-news/" rel="noopener nofollow">https://www.haciaworks.org/all-news/</a></div></div>
+<div class="svc"><h3>HACIA Career Center / Job Board</h3><span class="tag">Recruiting</span><p>HACIA hosts and maintains its own job board connecting construction-industry employers and job seekers within its network.</p><blockquote>Our job board is regularly updated with positions across various sectors in the construction industry, from entry-level roles to executive positions.</blockquote><div class="meta"><a href="https://www.haciaworks.org/careers/" rel="noopener nofollow">https://www.haciaworks.org/careers/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

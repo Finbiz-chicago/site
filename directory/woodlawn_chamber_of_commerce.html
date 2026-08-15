@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Woodlawn Chamber of Commerce - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Woodlawn Chamber of Commerce</h1>
+<p class="lede">The Woodlawn Chamber of Commerce&#x27;s mission is to build community knowledge, business wealth, and social well being through business ownership, education, resource directories, corridor beautification, signage, storefront and façade restoration, and employment training. We aim to decrease resident unemployment, crime, vacancy, and blight throughout the corridors in order to achieve a vibrant, safe environment for all in Woodlawn.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.woodlawnchamberchicago.org" rel="noopener nofollow">https://www.woodlawnchamberchicago.org</a></td></tr><tr><td>Adresse</td><td>6429 S King Drive, Chicago, IL 60637</td></tr><tr><td>Telephone</td><td>(630) 345-0438</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">15</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Woodlawn Chamber of Commerce (geographic business association)</h3><span class="tag">Geographically Based</span><p>The Chamber is the Woodlawn neighborhood&#x27;s own business association, working with members, residents, and local officials to advance economic development in the community.</p><blockquote>The Woodlawn Chamber of Commerce is dedicated to promoting and supporting business development in order to improve the quality of life of Woodlawn residents.</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/about-us/" rel="noopener nofollow">https://woodlawnchamberchicago.org/about-us/</a></div></div>
+<div class="svc"><h3>Business District Improvement</h3><span class="tag">Revitalization</span><p>The Chamber runs a business district improvement program covering corridor beautification, signage, storefront and façade restoration, and employment training, tracked via its own project plans and metrics dashboards.</p><blockquote>corridor beautification, signage, storefront and façade restoration, and employment training</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/business-district-improvement/" rel="noopener nofollow">https://woodlawnchamberchicago.org/business-district-improvement/</a></div></div>
+<div class="svc"><h3>Shared Purchasing Network</h3><p>A group-buying program the Chamber operates so small businesses and nonprofits can save on costs per service, with no obligation to sign a new contract.</p><blockquote>The Shared Purchasing Network empowers small businesses and nonprofits to save more and do more through group buying.</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/shared-purchasing-network-2/" rel="noopener nofollow">https://woodlawnchamberchicago.org/shared-purchasing-network-2/</a></div></div>
+<div class="svc"><h3>SBAC-Empower Business Coaching Partnership</h3><span class="tag">One-on-One Counseling</span><p>The Chamber co-delivers a coaching and mentoring initiative with SBAC-Empower covering access to capital, marketing strategies, HR strategies, and financial education for Woodlawn small businesses.</p><blockquote>has launched an exciting new initiative to provide strategic coaching and mentoring to small businesses in the Woodlawn area</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/woodlawn-chamber-of-commerce-partners-with-sbac-empower-to-boost-local-small-businesses/" rel="noopener nofollow">https://woodlawnchamberchicago.org/woodlawn-chamber-of-commerce-partners-with-sbac-empower-to-boost-local-small-businesses/</a></div></div>
+<div class="svc"><h3>Small Business Competition</h3><span class="tag">Pitch Events</span><p>A Chamber-run local business competition program that organizes competitions, offers mentorship, and provides financial support to aspiring entrepreneurs.</p><blockquote>encourages entrepreneurship and innovation by organizing local business competitions, offering mentorship, and providing financial support to aspiring entrepreneurs</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/become-a-sponsor/" rel="noopener nofollow">https://woodlawnchamberchicago.org/become-a-sponsor/</a></div></div>
+<div class="svc"><h3>Micro Grants for Small Business</h3><span class="tag">Grant Funding Providers</span><p>A Chamber-administered micro-grant program providing financial support to local small businesses for working capital, equipment, and marketing needs.</p><blockquote>This program offers financial support to local small businesses, helping them with working capital, equipment, marketing, and other critical needs.</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/become-a-sponsor/" rel="noopener nofollow">https://woodlawnchamberchicago.org/become-a-sponsor/</a></div></div>
+<div class="svc"><h3>Business Training and Workshops</h3><span class="tag">Business Management Training</span><p>The Chamber organizes its own training sessions and workshops on business development, marketing, and financial management for local entrepreneurs and business owners.</p><blockquote>The chamber organizes training sessions and workshops to equip local entrepreneurs and business owners with valuable knowledge and skills</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/become-a-sponsor/" rel="noopener nofollow">https://woodlawnchamberchicago.org/become-a-sponsor/</a></div></div>
+<div class="svc"><h3>Free Virtual Helpdesk Services</h3><span class="tag">One-on-One Counseling</span><p>The Chamber runs a free virtual helpdesk offering consultations to help businesses with capital access and other business needs.</p><blockquote>We offer FREE virtual helpdesk services to help you with many of your business needs</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/membership-for-entrepreneur-and-business-owner-benefits/" rel="noopener nofollow">https://woodlawnchamberchicago.org/membership-for-entrepreneur-and-business-owner-benefits/</a></div></div>
+<div class="svc"><h3>Networking Opportunities</h3><span class="tag">Small Business/General</span><p>The Chamber facilitates networking among businesspeople and entrepreneurs in its network to build relationships, share information, and find venture partners.</p><blockquote>Meet with businesspeople and entrepreneurs in the Chamber to form business relationships and to create other business opportunities</blockquote><div class="meta"><a href="https://www.woodlawnchamberchicago.org" rel="noopener nofollow">https://www.woodlawnchamberchicago.org</a></div></div>
+<div class="svc"><h3>Marketing Assistance</h3><span class="tag">Advertising</span><p>The Chamber provides marketing assistance to help members develop sales strategies and marketing campaigns.</p><blockquote>Get support to develop sales strategies and marketing campaigns for projects that maximize company profits</blockquote><div class="meta"><a href="https://www.woodlawnchamberchicago.org" rel="noopener nofollow">https://www.woodlawnchamberchicago.org</a></div></div>
+<div class="svc"><h3>Technical Advising</h3><p>The Chamber offers technical advising covering design, contracts, timelines, permitting, health and safety, risk, and cost considerations for member businesses.</p><blockquote>Provides robust advice balancing elements of technical design, contracts, timescales, permitting, health and safety, risk, cost, market and more.</blockquote><div class="meta"><a href="https://www.woodlawnchamberchicago.org" rel="noopener nofollow">https://www.woodlawnchamberchicago.org</a></div></div>
+<div class="svc"><h3>Capital Insight</h3><p>The Chamber offers guidance on how to best use and build capital to expand a member&#x27;s business.</p><blockquote>All businesses must have capital in order to purchase assets and maintain their operations.</blockquote><div class="meta"><a href="https://www.woodlawnchamberchicago.org" rel="noopener nofollow">https://www.woodlawnchamberchicago.org</a></div></div>
+<div class="svc"><h3>Woodlawn Chamber of Commerce (chamber association)</h3><span class="tag">Geographically Based</span><p>The Woodlawn Chamber of Commerce is itself a geographically-based business association serving the Woodlawn neighborhood, working with members, residents, and local officials to increase economic development and competitiveness.</p><blockquote>The Woodlawn Chamber of Commerce is dedicated to promoting and supporting business development in order to improve the quality of life of Woodlawn residents.</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/about-us/" rel="noopener nofollow">https://woodlawnchamberchicago.org/about-us/</a></div></div>
+<div class="svc"><h3>SBAC-Empower Business Coaching &amp; Mentoring Initiative</h3><span class="tag">Formal Mentoring Programs</span><p>The Chamber co-launched an initiative with SBAC-Empower to provide strategic coaching and mentoring to small businesses in the Woodlawn area.</p><blockquote>The Woodlawn Chamber of Commerce, in collaboration with SBAC-Empower, has launched an exciting new initiative to provide strategic coaching and mentoring to small businesses in the Woodlawn area.</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/woodlawn-chamber-chicago-news/" rel="noopener nofollow">https://woodlawnchamberchicago.org/woodlawn-chamber-chicago-news/</a></div></div>
+<div class="svc"><h3>Virtual Helpdesk Services</h3><p>The Chamber offers free virtual helpdesk services to entrepreneurs and business owners seeking help growing their business and accessing capital.</p><blockquote>Let The Woodlawn Chamber of Commerce assist you today!! We offer FREE virtual helpdesk services to</blockquote><div class="meta"><a href="https://woodlawnchamberchicago.org/woodlawn-chamber-chicago-news/" rel="noopener nofollow">https://woodlawnchamberchicago.org/woodlawn-chamber-chicago-news/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

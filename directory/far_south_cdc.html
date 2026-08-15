@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Far South Community Development Corporation - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Far South Community Development Corporation</h1>
+<p class="lede">Far South CDC&#x27;s mission is to alleviate low-income communities of poverty, blight, and economic distress through effective economic and community development.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.farsouthcdc.org" rel="noopener nofollow">https://www.farsouthcdc.org</a></td></tr><tr><td>Adresse</td><td>853 West 115th Street, Chicago, Illinois 60643</td></tr><tr><td>Telephone</td><td>(773) 831-7107</td></tr><tr><td>Courriel</td><td>hr@farsouthcdc.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">7</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Neighborhood Business Development Center (NBDC)</h3><span class="tag">One-on-One Counseling</span><span class="tag">Registration, Licenses and Permits</span><span class="tag">Startup Business Counseling</span><p>Far South CDC operates the Neighborhood Business Development Center (NBDC), its in-house business services program, led by a dedicated NBDC director on staff.</p><blockquote>NBDCs provide general business licensing and public way use permitting guidance as well as specialized support services based on their program type ,which includes confidential counseling, technical assistance, professional development workshops, access to capital, B2B networking, employment and workforce development assistance and more.</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/nbdc" rel="noopener nofollow">https://www.farsouthcdc.org/nbdc</a></div></div>
+<div class="svc"><h3>SSA45 Business Permit, Licensing &amp; Grant Assistance</h3><span class="tag">Registration, Licenses and Permits</span><p>Through Special Service Area #45, Far South CDC assists SSA45-area businesses with City of Chicago permits, licensing, grant programs, incentive programs, and training.</p><blockquote>If you need assistance with City of Chicago business permits, licensing, grant programs, incentive programs, and training...</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/business-support" rel="noopener nofollow">https://www.farsouthcdc.org/business-support</a></div></div>
+<div class="svc"><h3>Special Service Area #45 (SSA45) District Management</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>Far South CDC is the City-contracted Service Provider Agency that manages SSA45&#x27;s tax-funded programs for the South Halsted Street business district, including budgeting, marketing, and district capacity building.</p><blockquote>Special Service Areas, known as Business Improvement Districts or BIDs in other cities, are local tax districts that fund expanded services and programs through a localized property tax levy within contiguous areas.</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/special-service-area-45" rel="noopener nofollow">https://www.farsouthcdc.org/special-service-area-45</a></div></div>
+<div class="svc"><h3>Facade Enhancement / Rebate Program (SSA45)</h3><span class="tag">Revitalization</span><p>Far South CDC, through SSA45, administers a facade rebate program giving commercial property owners in the district funding to improve storefronts and facades.</p><blockquote>The Façade Rebate Program (FRP) is currently funded by 56 Special Service Areas in Chicago.</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/community-grants" rel="noopener nofollow">https://www.farsouthcdc.org/community-grants</a></div></div>
+<div class="svc"><h3>Roseland Medical District Administration</h3><span class="tag">Economic Development</span><p>Far South CDC serves as the administrative support organization managing operations and programs for the Roseland Community Medical District, an economic development district aimed at attracting medical and high-tech enterprises.</p><blockquote>Far South Community Development Corporation (Far South CDC) was hired as the administrative support organization to manage the operations and programs for the Roseland Medical District Commissioners.</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/roseland-medical-district" rel="noopener nofollow">https://www.farsouthcdc.org/roseland-medical-district</a></div></div>
+<div class="svc"><h3>Regional Planning &amp; Corridor Studies</h3><span class="tag">Economic Development</span><p>Far South CDC leads and co-leads regional planning efforts including corridor land use plans, master plans, and TIF/market analyses that shape commercial development in its service area.</p><blockquote>Far South CDC will lead a Corridor Land Use Plan for Special Service Area #45, which consists of 27 blocks along South Halsted.</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/planning" rel="noopener nofollow">https://www.farsouthcdc.org/planning</a></div></div>
+<div class="svc"><h3>Commercial &amp; Retail Space Leasing</h3><span class="tag">Office Space</span><span class="tag">Retail Space</span><p>Far South CDC leases commercial and industrial retail/office space it owns and develops, such as the Maple Park Marketplace retail center, to businesses.</p><blockquote>Maple Park Marketplace - Retail Center 821 - 861 West 115th Street Chicago, IL 60643 44,457 SF Retail/Office Availability</blockquote><div class="meta"><a href="https://www.farsouthcdc.org/properties" rel="noopener nofollow">https://www.farsouthcdc.org/properties</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

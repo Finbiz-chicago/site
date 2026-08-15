@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chicago Department of Business Affairs and Consumer Protection (BACP) - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Chicago Department of Business Affairs and Consumer Protection (BACP)</h1>
+<p class="lede">The Chicago Small Business Center (SBC) is the business licensing and permitting division of the City of Chicago Department of Business Affairs and Consumer Protection (BACP) and the City&#x27;s one-stop-shop for business licensing, public way use permitting and other resources to start and grow your business.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.chicago.gov/city/en/sites/chicago-business-licensing/home.html" rel="noopener nofollow">https://www.chicago.gov/city/en/sites/chicago-business-licensing/home.html</a></td></tr><tr><td>Adresse</td><td>121 North LaSalle Street, 8th Floor, Room 800, Chicago, IL 60602</td></tr><tr><td>Telephone</td><td>(312) 744-6249</td></tr><tr><td>Courriel</td><td>businesslicense@cityofchicago.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">17</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Small Business Center – Business Licensing &amp; Permitting</h3><span class="tag">Registration, Licenses and Permits</span><span class="tag">Startup Business Counseling</span><p>BACP&#x27;s Small Business Center is the City&#x27;s one-stop-shop for business licensing, public way use permitting, and other resources to start and grow a business, staffed by Business Consultants who serve customers on a first-come first-served basis.</p><blockquote>The Chicago Small Business Center (SBC) is the business licensing and permitting division of the City of Chicago Department of Business Affairs and Consumer Protection (BACP)</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html</a></div></div>
+<div class="svc"><h3>Public Way Use Permits</h3><span class="tag">Registration, Licenses and Permits</span><p>BACP issues permits for business fixtures on, over, or under the public way, such as signs, canopies, awnings, and lighting.</p><blockquote>Items associated with a business that are on, over, or under the public way such as signs, canopies, awnings, and lighting require a BACP permit.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html</a></div></div>
+<div class="svc"><h3>Liquor Licensing</h3><span class="tag">Registration, Licenses and Permits</span><p>BACP issues City of Chicago Liquor Licenses and conducts the associated debt checks, background checks, and premises inspections required to sell liquor in Chicago.</p><blockquote>You must have a City of Chicago Liquor License to sell liquor. There are different types of liquor licenses required for different activities.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home/liquorlicenses.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home/liquorlicenses.html</a></div></div>
+<div class="svc"><h3>Shared Housing Registration</h3><span class="tag">Registration, Licenses and Permits</span><p>BACP regulates short-term residential rental activity in Chicago and provides registration for shared housing units.</p><blockquote>Short-term residential rental activity is regulated by BACP. Use this link for information on how to register your residence as a shared housing unit.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html</a></div></div>
+<div class="svc"><h3>Public Vehicle Licensing</h3><span class="tag">Registration, Licenses and Permits</span><p>BACP issues public vehicle licenses covering taxicabs, Transportation Network Providers, charter buses, chauffeurs, and other public vehicles.</p><blockquote>Information on licenses issued by BACP for taxicabs, Transportation Network Providers, charter buses, chauffeurs, and other public vehicles.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home.html</a></div></div>
+<div class="svc"><h3>Free Business Education Webinars</h3><span class="tag">Startup Classes</span><p>BACP hosts recurring free webinars covering business licensing, marketing, business planning, technology, and financial resources for entrepreneurs.</p><blockquote>BACP&#x27;s free business education webinars are held every Wednesday afternoon and Friday morning on topics such as business licensing, marketing, business planning, technology, financial resources, and more.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/supp_info/businesseducationandresources.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/supp_info/businesseducationandresources.html</a></div></div>
+<div class="svc"><h3>Chicago Business Centers (CBC) Program</h3><span class="tag">Registration, Licenses and Permits</span><span class="tag">Small Business/General</span><p>BACP&#x27;s CBC initiative funds eight regional delegate agencies that provide one-on-one, no-cost business licensing, public way use permitting, and funding-referral consultations in historically underserved neighborhoods.</p><blockquote>The Chicago Business Centers (CBC) Program is a City of Chicago Department of Business Affairs and Consumer Protection (BACP) initiative to fill the current gap in local business resources</blockquote><div class="meta"><a href="https://www.chicago.gov/city/en/depts/bacp/supp_info/chicagobusinesscenters.html" rel="noopener nofollow">https://www.chicago.gov/city/en/depts/bacp/supp_info/chicagobusinesscenters.html</a></div></div>
+<div class="svc"><h3>Neighborhood Retail Activation Program</h3><span class="tag">Revitalization</span><p>A BACP initiative to revitalize commercial corridors in Austin, Belmont Cragin, and West Garfield Park, assisting businesses impacted by the 2023 and 2024 summer storms and filling vacant storefronts.</p><blockquote>The Neighborhood Retail Activation Program is a new initiative aimed at revitalizing commercial corridors in Austin, Belmont Cragin, and West Garfield Park.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html</a></div></div>
+<div class="svc"><h3>Urban Agriculture Community Growers Program</h3><span class="tag">Government Funding</span><span class="tag">Site Location Assistance</span><p>BACP&#x27;s program supports urban growers with access to land, resources to build long-term growing sites, and technical support.</p><blockquote>Reducing the barriers to urban agriculture by supporting urban growers with access to land, resources to build long-term sites, and technical support.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html</a></div></div>
+<div class="svc"><h3>Small Business Support (Economic Recovery)</h3><span class="tag">Government Funding</span><p>ARP-funded BACP programs designed to ensure a strong economic recovery for Chicago&#x27;s small business community.</p><blockquote>Programs designed to ensure a strong recovery for the small business community.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html</a></div></div>
+<div class="svc"><h3>Non-Profit Capacity Building</h3><span class="tag">Technical Services</span><p>BACP-funded technical assistance and capacity building services for disproportionately impacted nonprofits to help stabilize and scale operations.</p><blockquote>Technical assistance and capacity building services for disproportionately impacted nonprofits, helping to stabilize and scale their operations.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html</a></div></div>
+<div class="svc"><h3>Food Equity</h3><span class="tag">Grant Funding Providers</span><p>BACP funds entrepreneurs in the food ecosystem and local food incubators as part of its food equity economic recovery programming.</p><blockquote>Programs focused on increasing food equity in communities with a history of disinvestment by providing funds to entrepreneurs who are part of the food ecosystem and funding local food incubators.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/provdrs/small_business_advocacy.html</a></div></div>
+<div class="svc"><h3>Business Compliance Enforcement / Better Business Team</h3><span class="tag">Government Requirements</span><p>BACP&#x27;s Better Business Team offers proactive, non-disciplinary consultations, including requestable phone calls or visits from a BACP investigator, to help business owners understand and adhere to City regulations.</p><blockquote>Providing businesses with the tools and knowledge needed to navigate regulatory requirements successfully.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/supp_info/businesscomplianceenforcement0.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/supp_info/businesscomplianceenforcement0.html</a></div></div>
+<div class="svc"><h3>BACP Entrepreneur Certificate Program</h3><span class="tag">Business Management Training</span><span class="tag">Startup Classes</span><p>A free BACP program requiring attendance at six webinars across business categories (inspections, operations/licensing, finance, legal, marketing, technology) to earn a certificate; graduates may qualify for a CIBC partner loan or college credit.</p><blockquote>The Chicago Department of Business Affairs and Consumer Protection (BACP) Entrepreneur Certificate Program is a free program for anyone interested in starting or growing a business in Chicago to gain knowledge across various essential business topics.</blockquote><div class="meta"><a href="https://www.chicago.gov/city/en/depts/bacp/supp_info/bacpentrepreneurcertificateprogram0.html" rel="noopener nofollow">https://www.chicago.gov/city/en/depts/bacp/supp_info/bacpentrepreneurcertificateprogram0.html</a></div></div>
+<div class="svc"><h3>Neighborhood Business Development Centers (NBDC) Program</h3><span class="tag">Government Funding</span><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>BACP funds a network of 65 nonprofit business service organizations that deliver confidential 1-on-1 advising, technical assistance, workshops, access-to-capital help, and networking to Chicago entrepreneurs and business owners.</p><blockquote>The NBDC Program consists of 65 local business service organizations that provide no-cost hyper-local business development assistance to entrepreneurs and business owners throughout the city.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/supp_info/neighborhoodbusinessdevelopmentcenters.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/supp_info/neighborhoodbusinessdevelopmentcenters.html</a></div></div>
+<div class="svc"><h3>Chicago&#x27;s Outdoor Dining Program</h3><span class="tag">Registration, Licenses and Permits</span><p>A BACP/CDOT collaboration that permits sidewalk cafes, full street closures, and curb lane closures so restaurants and bars can operate outdoor dining spaces.</p><blockquote>Chicago’s Outdoor Dining Program reimagines outdoor dining spaces across the city.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/depts/bacp/supp_info/Chicagosoutdoordiningprogram.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/depts/bacp/supp_info/Chicagosoutdoordiningprogram.html</a></div></div>
+<div class="svc"><h3>Business Compliance Regulatory Visits</h3><span class="tag">Government Requirements</span><p>BACP investigators will conduct an informational site visit to advise a business on how to stay compliant with City regulations.</p><blockquote>You can request a visit by City Business Compliance Investigators to advise you on how to remain compliant with City business regulations.</blockquote><div class="meta"><a href="https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home/applyingforabusinesslicense.html" rel="noopener nofollow">https://www.chicago.gov/content/city/en/sites/chicago-business-licensing/home/applyingforabusinesslicense.html</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

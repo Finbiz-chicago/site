@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Little Village Community Foundation Corp - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Little Village Community Foundation Corp</h1>
+<p class="lede">The Foundation of Little Village supports and encourages business growth through entrepreneurial opportunities impacting the economic wellness of our community.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://flvchicago.org/" rel="noopener nofollow">https://flvchicago.org/</a></td></tr><tr><td>Adresse</td><td>2501 S Trumbull Ave, Chicago, IL 60623</td></tr><tr><td>Telephone</td><td>(773) 621-8245</td></tr><tr><td>Courriel</td><td>info@flvchicago.org</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">13</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Little Village Economic Empowerment Center</h3><span class="tag">Business Plan Consulting</span><span class="tag">One-on-One Counseling</span><p>The Foundation runs the Little Village Economic Empowerment Center on behalf of the Illinois Department of Commerce &amp; Economic Opportunity, providing one-on-one business advice, technical assistance, and financial planning support to entrepreneurs.</p><blockquote>The Foundation operates the only Little Village Economic Empowerment Center on behalf of the Illinois Department of Commerce &amp; Economic Opportunity.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/economic-empowerment-center/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/economic-empowerment-center/</a></div></div>
+<div class="svc"><h3>Juntos Lanzamos</h3><span class="tag">Startup Business Counseling</span><span class="tag">Startup Classes</span><p>A 5-to-7-week bilingual entrepreneurship class helping participants with proper business registration and technical assistance in legal, accounting, and finance to launch a new business.</p><blockquote>Juntos Lanzamos is a digitally enabled 7-week program for people interested in starting a small business.</blockquote><div class="meta"><a href="https://flvchicago.org/programs/juntos-lanzamos/" rel="noopener nofollow">https://flvchicago.org/programs/juntos-lanzamos/</a></div></div>
+<div class="svc"><h3>Juntos Emprendemos</h3><span class="tag">Business Management Training</span><span class="tag">Market Plan Development</span><p>A 10-to-12-week cohort program for entrepreneurs with an established business idea, focused on strategic financial planning, brand positioning, sales strategies, and operational scalability.</p><blockquote>Juntos Emprendemos is the Foundation&#x27;s signature 12-week cohort program designed for 10-12 participants with a blended learning approach that includes subject matter experts and mentors.</blockquote><div class="meta"><a href="https://flvchicago.org/programs/juntos-emprendemos/" rel="noopener nofollow">https://flvchicago.org/programs/juntos-emprendemos/</a></div></div>
+<div class="svc"><h3>Juntos Avanzamos</h3><span class="tag">Budget, Cash Flow and Financial Statements Training</span><span class="tag">Debt Funding Preparation</span><p>A 4-week boot-camp-style financial literacy and capital investment class for existing small businesses ready for expansion, covering risk, return on investment, and leveraging debt or investment capital.</p><blockquote>Juntos Avanzamos is a Spanish language financial literacy program available to prior graduates of Juntos Emprendemos or Juntos Lanzamos.</blockquote><div class="meta"><a href="https://flvchicago.org/programs/juntos-avanzamos/" rel="noopener nofollow">https://flvchicago.org/programs/juntos-avanzamos/</a></div></div>
+<div class="svc"><h3>Entrepreneurial Workshops</h3><span class="tag">Business Management Training</span><span class="tag">Marketing Plan Training</span><p>Recurring educational webinars and in-person workshops on Digital Literacy, Finance, Marketing, and Business Operations for emerging entrepreneurs and small business owners.</p><blockquote>A series of educational webinars and in-person workshops presented by FLV staff, industry experts, skilled mentors, and partner organizations.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/entrepreneurial-workshops/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/entrepreneurial-workshops/</a></div></div>
+<div class="svc"><h3>One-On-One Coaching</h3><span class="tag">One-on-One Counseling</span><p>One-on-one coaching sessions in which staff assess a business&#x27;s needs and coach the owner on becoming ready for capital investment.</p><blockquote>Our skilled staff can help you through one-on-one coaching! We will learn about your business, assess your needs, and coach you on how to become ready for capital investment.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/business-finance-resources/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/business-finance-resources/</a></div></div>
+<div class="svc"><h3>Accessing Capital Opportunities &amp; Technical Assistance</h3><span class="tag">Debt Funding Preparation</span><span class="tag">Government Funding</span><p>Staff assist businesses with finding and applying for financial capital (grants, development bonds, bank loans) including help with paperwork and understanding requirements.</p><blockquote>We can help you find and apply for financial capital such as small business grants, development bonds, bank loans, and other financial tools.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/business-finance-resources/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/business-finance-resources/</a></div></div>
+<div class="svc"><h3>Foundation of Little Village Micro-Grants</h3><span class="tag">Grant Funding Providers</span><p>In-house micro-grant program of up to $2,000 for graduates of the Juntos Avanzamos class to fund growth-oriented purchases.</p><blockquote>Graduate from our Juntos Avanzamos class and become eligible for a micro-grant of up to $2,000.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/business-finance-resources/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/business-finance-resources/</a></div></div>
+<div class="svc"><h3>Foundation of Little Village Micro-Lending</h3><span class="tag">Microloan Providers</span><p>A micro-lending service offered directly by the Foundation to local small businesses.</p><blockquote>The Foundation of Little Village offers micro-lending for local, small businesses.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/business-finance-resources/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/business-finance-resources/</a></div></div>
+<div class="svc"><h3>Fiscal Sponsor Services</h3><span class="tag">Funds Development</span><p>The Foundation acts as fiscal sponsor for grant applications requiring 501(c)(3) sponsorship, managing the grant application, disbursement, and reporting process for a 15% fee.</p><blockquote>The Foundation of Little Village can serve as your fiscal sponsor. If you are applying for a grant that requires the sponsorship of an IRS designated 501(c)(3) nonprofit, contact us today to learn how we can help.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/fiscal-sponsor-services/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/fiscal-sponsor-services/</a></div></div>
+<div class="svc"><h3>Xquina® Incubator &amp; Cafe</h3><span class="tag">Commercial Kitchen Facilities</span><span class="tag">Incubator</span><p>A $7 million business incubator and community hub under development on the 26th Street corridor, featuring a café, co-working space, shared commercial kitchen, and event space for local entrepreneurs.</p><blockquote>The Foundation of Little Village purchased a historic, 1880s-era building on the 26th Street Corridor that will be restored, modernized, and reintroduced as a spacious business incubator and inclusive community hub.</blockquote><div class="meta"><a href="https://flvchicago.org/programs/xquina-incubator-cafe/" rel="noopener nofollow">https://flvchicago.org/programs/xquina-incubator-cafe/</a></div></div>
+<div class="svc"><h3>Corridor Revitalization</h3><span class="tag">Revitalization</span><p>A Foundation program undertaking beautification and restoration projects to enhance the 26th Street commercial corridor and improve quality of life and business revenue.</p><blockquote>Aims to undertake beautification and restoration projects to enhance the famous 26th Street commercial corridor.</blockquote><div class="meta"><a href="https://flvchicago.org/about-us/" rel="noopener nofollow">https://flvchicago.org/about-us/</a></div></div>
+<div class="svc"><h3>Xquina Advisory Board</h3><span class="tag">Formal Mentoring Programs</span><p>An advisory group of business community leaders who serve as a mentoring support network for local entrepreneurs.</p><blockquote>We are looking for leaders in the business community to serve as a support network to provide mentoring to local entrepreneurs.</blockquote><div class="meta"><a href="https://flvchicago.org/community-wealth-building/economic-empowerment-center/" rel="noopener nofollow">https://flvchicago.org/community-wealth-building/economic-empowerment-center/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

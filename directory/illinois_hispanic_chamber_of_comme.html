@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Illinois Hispanic Chamber of Commerce - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Illinois Hispanic Chamber of Commerce</h1>
+<p class="lede">IHCC aims to foster knowledge, connections, and collaboration to drive social change and sustainable economic impact through entrepreneurship.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://ihccbusiness.net" rel="noopener nofollow">https://ihccbusiness.net</a></td></tr><tr><td>Adresse</td><td>180 N Michigan Ave, Suite 500, Chicago, IL 60601</td></tr><tr><td>Telephone</td><td>(312) 425-9500</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">11</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Cook County Small Business Source</h3><span class="tag">One-on-One Counseling</span><p>Provides free one-on-one business advising and free group webinars to small businesses anywhere in Cook County.</p><blockquote>The Cook County Small Business Source Program provides one-on-one business advising to address the unique needs of businesses at no cost.</blockquote><div class="meta"><a href="https://ihccbusiness.net/cook-county-small-business-source/" rel="noopener nofollow">https://ihccbusiness.net/cook-county-small-business-source/</a></div></div>
+<div class="svc"><h3>Illinois Small Business Development Center (SBDC) at IHCC</h3><span class="tag">Business Plan Consulting</span><span class="tag">Startup Business Counseling</span><p>Offers no-cost advising for Illinois businesses including business and marketing plan assistance, individual business counseling, and loan packaging to help entrepreneurs start and grow businesses.</p><blockquote>The Illinois Small Business Development Center (SBDC) at IHCC offers no-cost advising and is dedicated to helping new entrepreneurs realize their dream of business ownership.</blockquote><div class="meta"><a href="https://ihccbusiness.net/sbdc-ihcc/" rel="noopener nofollow">https://ihccbusiness.net/sbdc-ihcc/</a></div></div>
+<div class="svc"><h3>LTNtech Founders Incubator</h3><span class="tag">Incubator</span><p>A tech incubator run jointly by IHCC and 1871, running 12-14 week cohorts with one-on-one coaching and network access to help Latinx entrepreneurs scale technology businesses.</p><blockquote>The LTNtech Founders Incubator is a first-of-its-kind partnership between IHCC and 1871.</blockquote><div class="meta"><a href="https://ihccbusiness.net/ltntech/" rel="noopener nofollow">https://ihccbusiness.net/ltntech/</a></div></div>
+<div class="svc"><h3>Illinois APEX Accelerator Program</h3><span class="tag">Bid Matching and Preparation</span><span class="tag">Obtaining Government Contracts</span><p>Provides no-cost one-on-one advising on government contracting, including certification assistance, business counseling, market research, and help identifying government buyers and subcontracting opportunities.</p><blockquote>The Illinois Apex Accelerator Program advises business owners on how to maximize opportunities and get exposed to local, statewide, and federal government agencies.</blockquote><div class="meta"><a href="https://ihccbusiness.net/ihcc-procurement-technical-assistance/" rel="noopener nofollow">https://ihccbusiness.net/ihcc-procurement-technical-assistance/</a></div></div>
+<div class="svc"><h3>Illinois Tollway Technical Assistance Program</h3><span class="tag">Bonding</span><span class="tag">Subcontracting Opportunities</span><p>Prepares emerging and established transportation-related construction and professional engineering firms, including small, diverse, and veteran-owned businesses, to participate on highway and vertical construction contracts.</p><blockquote>The Illinois Tollway Technical Assistance Program is designed to prepare emerging and established transportation-related construction and professional engineering services firms with</blockquote><div class="meta"><a href="https://ihccbusiness.net/procurement-collaboration/" rel="noopener nofollow">https://ihccbusiness.net/procurement-collaboration/</a></div></div>
+<div class="svc"><h3>Small Business Transportation Resource Center (SBTRC) - Great Lakes Region</h3><span class="tag">Bid Matching and Preparation</span><span class="tag">Subcontracting Opportunities</span><p>One of the three government contracting programs housed at IHCC, helping small and disadvantaged businesses participate in transportation-related projects throughout the Great Lakes Region.</p><blockquote>Dedicated to help and support small and disadvantaged businesses that are interested in participating in transportation related projects throughout the Great Lakes Region.</blockquote><div class="meta"><a href="https://ihccbusiness.net/procurement-collaboration/" rel="noopener nofollow">https://ihccbusiness.net/procurement-collaboration/</a></div></div>
+<div class="svc"><h3>Center for Hispanic Entrepreneurship (IHCC Foundation)</h3><span class="tag">Business Management Training</span><p>The IHCC Foundation&#x27;s educational program providing business, economic development, and entrepreneurial education to enhance business practices and increase the success of Hispanic entrepreneurs.</p><blockquote>The Center for Hispanic Entrepreneurship provides business, economic development and entrepreneurial educational programs that enhance business practices and increase the success of Hispanic entrepreneurs.</blockquote><div class="meta"><a href="https://ihccbusiness.net/about-ihcc/" rel="noopener nofollow">https://ihccbusiness.net/about-ihcc/</a></div></div>
+<div class="svc"><h3>Illinois Hispanic Chamber of Commerce (Chamber Membership Association)</h3><span class="tag">Demographically Based</span><p>IHCC is itself a chamber of commerce organized around and for the Hispanic business community, functioning as a demographically-based business association in addition to its individual programs.</p><blockquote>The Illinois Hispanic Chamber of Commerce (IHCC) is the largest community of Hispanic business owners in Illinois and the Midwest.</blockquote><div class="meta"><a href="https://ihccbusiness.net/become-a-member-3/" rel="noopener nofollow">https://ihccbusiness.net/become-a-member-3/</a></div></div>
+<div class="svc"><h3>Resilient Communities Initiative (RCI)</h3><span class="tag">Grant Funding Providers</span><p>An IHCC Foundation initiative that delivers direct financial assistance through microgrants, activates neighborhood economies, and provides educational resources to help businesses impacted by immigration enforcement activity.</p><blockquote>the IHCC Foundation launched the Resilient Communities Initiative (RCI) to provide immediate relief and long-term stability</blockquote><div class="meta"><a href="https://ihccbusiness.net/rci/" rel="noopener nofollow">https://ihccbusiness.net/rci/</a></div></div>
+<div class="svc"><h3>Small Business Microgrant Fund</h3><span class="tag">Grant Funding Providers</span><p>A microgrant fund operated by the IHCC Foundation as part of the Resilient Communities Initiative, providing direct financial support to businesses facing real challenges.</p><blockquote>Our pool of microgrants grows through the generosity of people who believe in community</blockquote><div class="meta"><a href="https://ihccbusiness.net/rci/" rel="noopener nofollow">https://ihccbusiness.net/rci/</a></div></div>
+<div class="svc"><h3>Tools to Protect Your Business</h3><span class="tag">Government Requirements</span><span class="tag">Policies and Templates</span><p>An IHCC-created resource hub, developed in collaboration with the Mexican Consulate and community organizations, that compiles guidance and templates (e.g. Power of Attorney, business continuity plans) to help small business owners and employees prepare for immigration enforcement disruptions.</p><blockquote>the Illinois Hispanic Chamber of Commerce (IHCC) has launched Tools to Protect Your Business, a resource tool designed to provide small business owners and their employees with the information and guidance they need</blockquote><div class="meta"><a href="https://ihccbusiness.net/tools-to-protect-your-business/" rel="noopener nofollow">https://ihccbusiness.net/tools-to-protect-your-business/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

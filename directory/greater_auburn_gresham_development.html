@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greater Auburn Gresham Development Corporation - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Greater Auburn Gresham Development Corporation</h1>
+<p class="lede">Our mission is to foster and promote the revitalization of the low-to-moderate-income communities that we serve in Chicago and South Suburban neighborhoods by utilizing comprehensive community development strategies and initiatives to help maintain healthy, safe and sustainable neighborhoods where our families and businesses can thrive.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.gagdc.org" rel="noopener nofollow">https://www.gagdc.org</a></td></tr><tr><td>Adresse</td><td>839 West 79th Street, Suite 400, Chicago, IL 60620</td></tr><tr><td>Telephone</td><td>(773) 723-6077</td></tr><tr><td>Courriel</td><td>info@gagdc.org</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">8</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Neighborhood Business Development Center (NBDC)</h3><span class="tag">Government Requirements</span><span class="tag">Small Business/General</span><p>GAGDC operates as a City of Chicago-designated Neighborhood Business Development Center, providing small businesses with technical assistance for city-related issues, networking opportunities, and community/regional marketing initiatives.</p><blockquote>Greater Auburn-Gresham Development Corporation (GAGDC) is a Neighborhood Business Development Center as defined by the City of Chicago.</blockquote><div class="meta"><a href="https://www.gagdc.org/economic-development" rel="noopener nofollow">https://www.gagdc.org/economic-development</a></div></div>
+<div class="svc"><h3>Special Service Area #69 (SSA #69) Management</h3><span class="tag">Geographically Based</span><span class="tag">Revitalization</span><p>GAGDC is the designated Service Provider for Special Service Area #69 along Ashland Avenue, managing beautification, marketing, and business retention/attraction programming for the commercial corridor.</p><blockquote>The Greater Auburn Gresham Development Corporation (GAGDC) serves as the Service Provider for SSA#69, entrusted with funding, reporting, and programming for neighborhood and business initiatives along the corridor.</blockquote><div class="meta"><a href="https://www.gagdc.org/ssa-69" rel="noopener nofollow">https://www.gagdc.org/ssa-69</a></div></div>
+<div class="svc"><h3>Special Service Area #81 (SSA #81) Management</h3><span class="tag">Geographically Based</span><span class="tag">Revitalization</span><p>GAGDC manages Special Service Area #81, a City of Chicago business district providing public way maintenance, marketing, business retention, and security services to area businesses.</p><blockquote>Established in 2025 SSA #81 is the heartbeat of Chicago&#x27;s Southside — a place where innovation, collaboration, and connection fuel a vibrant future.</blockquote><div class="meta"><a href="https://www.gagdc.org/ssa81" rel="noopener nofollow">https://www.gagdc.org/ssa81</a></div></div>
+<div class="svc"><h3>Facade Enhancement Program</h3><span class="tag">Design Services</span><span class="tag">Grant Funding Providers</span><p>GAGDC administers the Facade Enhancement Program, offering one-on-one architectural consultations, professional renderings, and renovation grants to eligible businesses in SSA #69 and SSA #81.</p><blockquote>The Facade Enhancement program offers architectural services to participants by providing grants up to $5,000 to eligible businesses located within the SSA #69 business district.</blockquote><div class="meta"><a href="https://www.gagdc.org/ssa-69" rel="noopener nofollow">https://www.gagdc.org/ssa-69</a></div></div>
+<div class="svc"><h3>Urban Green Team</h3><span class="tag">Re-Entry Support</span><p>GAGDC&#x27;s social enterprise, the Urban Green Team, provides debris removal, weekly cleaning, and landscaping services to the business district while creating job opportunities for area residents, including those re-entering the workforce.</p><blockquote>creates meaningful job opportunities for area residents — including individuals re-entering the workforce and seeking a second chance</blockquote><div class="meta"><a href="https://www.gagdc.org/ssa81" rel="noopener nofollow">https://www.gagdc.org/ssa81</a></div></div>
+<div class="svc"><h3>Real Estate Development</h3><span class="tag">Real Estate Finance</span><span class="tag">Site Location Assistance</span><p>GAGDC undertakes real estate development activities including rehabbing and building mixed-income housing and commercial units, and provides consulting, project management, and construction management services.</p><blockquote>Supports, rehabs and builds mixed-income housing and commercial units</blockquote><div class="meta"><a href="https://www.gagdc.org/economic-development" rel="noopener nofollow">https://www.gagdc.org/economic-development</a></div></div>
+<div class="svc"><h3>Excellerator Fund</h3><span class="tag">Grant Funding Providers</span><p>A joint grantmaking initiative between GAGDC and Latinos Progresando that provides grants, convenings, and capacity-building support to Black and Mexican-led organizations in Chicago, run on two annual grant cycles.</p><blockquote>The Excellerator Fund is a community-driven grantmaking 5 Year initiative that promotes equitable social and economic recovery in Chicago&#x27;s Black and Mexican communities.</blockquote><div class="meta"><a href="https://www.gagdc.org/key-initiatives" rel="noopener nofollow">https://www.gagdc.org/key-initiatives</a></div></div>
+<div class="svc"><h3>Healthy Lifestyle Hub Teaching Kitchen and Meeting Space</h3><span class="tag">Commercial Kitchen Facilities</span><span class="tag">Conference/Meeting and Event Space</span><p>GAGDC operates and offers reservable community rooms and a high-tech teaching kitchen at its Healthy Lifestyle Hub, available for community and business use.</p><blockquote>A high-tech kitchen and training center, sponsored by the Chicago Bears, will be located on the first floor, offering local chefs, neighbors, and students a place to master healthy cooking.</blockquote><div class="meta"><a href="https://www.gagdc.org/gagdc-healthy-lifestyle-hub" rel="noopener nofollow">https://www.gagdc.org/gagdc-healthy-lifestyle-hub</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

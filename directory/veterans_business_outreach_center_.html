@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veterans Business Outreach Center (VBOC) at WWBIC - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Veterans Business Outreach Center (VBOC) at WWBIC</h1>
+<p class="lede">Putting Dreams to Work</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.wwbic.com/" rel="noopener nofollow">https://www.wwbic.com/</a></td></tr><tr><td>Adresse</td><td>1533 N RiverCenter Drive, Milwaukee, WI 53212</td></tr><tr><td>Telephone</td><td>(414) 263-5450</td></tr><tr><td>Courriel</td><td>info@wwbic.com</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">5</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Veterans Business Outreach Center (VBOC) Program</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>VBOC at WWBIC is an SBA-funded program delivering entrepreneurial development services—business training, counseling, and resource referrals—to veterans, active-duty, Guard, and Reserve members in Wisconsin, Illinois, and Minnesota.</p><blockquote>The Veterans Business Outreach Center (VBOC) Program is designed to provide entrepreneurial development services such as business training, counseling, and resource partner referrals to transitioning service members, veterans, and National Guard &amp; Reserve members interested in starting or growing a small business.</blockquote><div class="meta"><a href="https://www.wwbic.com/veterans" rel="noopener nofollow">https://www.wwbic.com/veterans</a></div></div>
+<div class="svc"><h3>Boots to Business / Boots to Business Reboot</h3><span class="tag">Startup Business Counseling</span><span class="tag">Startup Classes</span><p>VBOC delivers Boots to Business and Boots to Business | Reboot, entrepreneurial training programs for transitioning service members and veterans.</p><blockquote>The VBOC @ WWBIC provides programs and services that help start or grow your business, including: Boots to Business and Boots to Business | Reboot Business Training and Counseling Assistance with Business Loans Assistance with Veterans Business Certification</blockquote><div class="meta"><a href="https://www.wwbic.com/veterans" rel="noopener nofollow">https://www.wwbic.com/veterans</a></div></div>
+<div class="svc"><h3>VBOC Business Training and Counseling</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>VBOC provides direct business training and one-on-one counseling to veterans starting or growing a small business.</p><blockquote>The VBOC @ WWBIC provides programs and services that help start or grow your business, including: Boots to Business and Boots to Business | Reboot Business Training and Counseling Assistance with Business Loans Assistance with Veterans Business Certification</blockquote><div class="meta"><a href="https://www.wwbic.com/veterans" rel="noopener nofollow">https://www.wwbic.com/veterans</a></div></div>
+<div class="svc"><h3>VBOC Assistance with Business Loans</h3><span class="tag">Loan Providers</span><span class="tag">Microloan Providers</span><p>VBOC assists veteran entrepreneurs with accessing business loans to start or grow their companies.</p><blockquote>The VBOC @ WWBIC provides programs and services that help start or grow your business, including: Boots to Business and Boots to Business | Reboot Business Training and Counseling Assistance with Business Loans Assistance with Veterans Business Certification</blockquote><div class="meta"><a href="https://www.wwbic.com/veterans" rel="noopener nofollow">https://www.wwbic.com/veterans</a></div></div>
+<div class="svc"><h3>VBOC Assistance with Veterans Business Certification</h3><span class="tag">Obtaining Certification</span><span class="tag">Registration Assistance</span><p>VBOC helps veteran business owners obtain veteran-owned business certification.</p><blockquote>The VBOC @ WWBIC provides programs and services that help start or grow your business, including: Boots to Business and Boots to Business | Reboot Business Training and Counseling Assistance with Business Loans Assistance with Veterans Business Certification</blockquote><div class="meta"><a href="https://www.wwbic.com/veterans" rel="noopener nofollow">https://www.wwbic.com/veterans</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

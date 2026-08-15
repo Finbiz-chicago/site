@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Women&#x27;s Entrepreneurship Hub (WE Hub) - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Women&#x27;s Entrepreneurship Hub (WE Hub)</h1>
+<p class="lede">Our mission is to improve the economic status of women.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://wehub.org" rel="noopener nofollow">https://wehub.org</a></td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">9</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>WE Hub Curated Resource Library</h3><span class="tag">Business Research Resources</span><p>WE Hub operates a free, centralized platform that gathers and curates business support resources from trusted partner organizations across Illinois for women entrepreneurs to browse.</p><blockquote>Gathering and curating resources from trusted partners throughout Illinois in one convenient place.</blockquote><div class="meta"><a href="https://wehub.org/about-us/" rel="noopener nofollow">https://wehub.org/about-us/</a></div></div>
+<div class="svc"><h3>Money Finder</h3><span class="tag">Grant Funding Providers</span><span class="tag">Loan Providers</span><p>Money Finder is WE Hub&#x27;s own tool that surfaces up-to-date grants, loans, and other capital-raising opportunities with custom recommendations for entrepreneurs.</p><blockquote>Explore our Money Finder for up-to-date capital resources and custom recommendations.</blockquote><div class="meta"><a href="https://wehub.org/resource/financial-security-banking-access-asset-protection/" rel="noopener nofollow">https://wehub.org/resource/financial-security-banking-access-asset-protection/</a></div></div>
+<div class="svc"><h3>WE Hub Community Forums</h3><span class="tag">Demographically Based</span><p>Free WE Hub accounts include access to community forums where women entrepreneurs, including Black and Latina/x business owners, connect and share experiences.</p><blockquote>Access to community forums with other women entrepreneurs</blockquote><div class="meta"><a href="https://wehub.org/resources/" rel="noopener nofollow">https://wehub.org/resources/</a></div></div>
+<div class="svc"><h3>My Action Plan Dashboard</h3><p>WE Hub&#x27;s free account gives users a personalized dashboard (&quot;My Action Plan&quot;) with step-by-step guides, location- and goal-based recommendations, and progress tracking.</p><blockquote>Personalized recommendations based on your location and goals</blockquote><div class="meta"><a href="https://wehub.org/resources/" rel="noopener nofollow">https://wehub.org/resources/</a></div></div>
+<div class="svc"><h3>Curated Entrepreneurship Resource Hub</h3><span class="tag">Business Research Resources</span><p>WE Hub operates a self-service online platform that gathers and curates business-support resources from trusted partners across Illinois into a single searchable hub for women entrepreneurs.</p><blockquote>Gathering and curating resources from trusted partners throughout Illinois in one convenient place.</blockquote><div class="meta"><a href="https://wehub.org/about-us/" rel="noopener nofollow">https://wehub.org/about-us/</a></div></div>
+<div class="svc"><h3>Personalized Resource Toolkit / Action Plan</h3><p>Members complete a questionnaire on WE Hub and receive a customized task checklist and resource toolkit (tracked via &#x27;My Action Plan&#x27; in their dashboard) to guide their entrepreneurial next steps.</p><blockquote>Receive your task checklist to plan your next moves. Get a customized resource toolkit to guide you in the right direction.</blockquote><div class="meta"><a href="https://wehub.org" rel="noopener nofollow">https://wehub.org</a></div></div>
+<div class="svc"><h3>Money Finder (Capital Opportunity Awareness Tool)</h3><p>WE Hub runs a &#x27;Money Finder&#x27; feature on its own site that surfaces and raises awareness of grant, loan, and capital-raising opportunities for women entrepreneurs.</p><blockquote>Raising awareness about opportunities for grants, loans, and other timely capital-raising opportunities.</blockquote><div class="meta"><a href="https://wehub.org/about-us/" rel="noopener nofollow">https://wehub.org/about-us/</a></div></div>
+<div class="svc"><h3>Peer Community / Connection Space</h3><span class="tag">Demographically Based</span><p>WE Hub maintains a community space (its &#x27;Community&#x27; site section) where women entrepreneurs can connect with each other and share experiences in a supportive environment.</p><blockquote>Providing a safe and supportive environment for women to connect and share experiences.</blockquote><div class="meta"><a href="https://wehub.org/about-us/" rel="noopener nofollow">https://wehub.org/about-us/</a></div></div>
+<div class="svc"><h3>Choose Business Structure Course</h3><span class="tag">Forming a Business</span><p>A free course hosted on the WE Hub platform (behind account sign-in) walking women entrepreneurs through choosing the right legal structure for their business.</p><blockquote>You have several options when it comes to your business&#x27;s legal structure. Learn about each one to choose the one that&#x27;s right for you.</blockquote><div class="meta"><a href="https://wehub.org/resource/choose-business-structure/" rel="noopener nofollow">https://wehub.org/resource/choose-business-structure/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

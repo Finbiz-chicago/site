@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Illinois Small Business Development Center Network - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Illinois Small Business Development Center Network</h1>
+<p class="lede">Statewide network of Illinois Department of Commerce and Economic Opportunity (DCEO) programs and centers providing regulatory guidance, business advising, international trade, government contracting, environmental compliance, and financing assistance to Illinois small businesses.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://dceo.illinois.gov/smallbizassistance.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance.html</a></td></tr><tr><td>Telephone</td><td>(800) 252-2923</td></tr><tr><td>Courriel</td><td>BIC@Illinois.gov</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">18</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Business Information Center</h3><span class="tag">Registration, Licenses and Permits</span><p>A statewide resource where business specialists provide professional guidance to entrepreneurs, helping them identify and navigate regulatory requirements and linking them to state and local resources.</p><blockquote>The Business Information Center is a single statewide resource for entrepreneurs and businesses to obtain comprehensive regulatory and permitting information.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/businessinformationcenter.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/businessinformationcenter.html</a></div></div>
+<div class="svc"><h3>Illinois Small Business Development Centers (SBDC)</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>Centers offering one-on-one business advice, business plan development, market and financing assistance, and specialized services in technology, innovation and entrepreneurial development.</p><blockquote>Illinois Small Business Development Centers are located throughout the state and provide information, confidential business guidance, training, and other resources for start-ups and existing small businesses.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/sbdc.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/sbdc.html</a></div></div>
+<div class="svc"><h3>SBDC International Trade Centers (ITC)</h3><span class="tag">Identification/Research of Foreign Markets</span><span class="tag">International Trade Education and Training</span><p>Centers offering information, counseling and training to existing and new-to-export companies interested in pursuing international trade opportunities, including export readiness evaluation and trade lead automation.</p><blockquote>Illinois International Trade Centers provide assistance with international trade and exporting.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/itc.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/itc.html</a></div></div>
+<div class="svc"><h3>Illinois APEX Accelerator</h3><span class="tag">Bid Matching and Preparation</span><span class="tag">Obtaining Government Contracts</span><p>Government contracting assistance program (formerly PTAC) providing one-on-one counseling, bid matching, certification assistance, and market research to help businesses sell to government agencies.</p><blockquote>Illinois APEX Accelerator, through its local center provides one-on-one advising, technical information, marketing assistance and training to existing businesses that are interested in selling their products and/or services to local, state, or federal government agencies.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere.html</a></div></div>
+<div class="svc"><h3>Small Business Environmental Assistance Program (SBEAP)</h3><span class="tag">Environmental Compliance</span><p>A DCEO-housed program giving small businesses free, confidential help understanding and complying with environmental regulations, permits, and air quality reporting obligations.</p><blockquote>the SBEAP provides free confidential information and services to help small businesses understand and comply with their environmental obligations.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/small-business-environmental-assistance-program.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/small-business-environmental-assistance-program.html</a></div></div>
+<div class="svc"><h3>Regulatory Flexibility Program</h3><span class="tag">Small Business Policy</span><p>A program housed in the Business Information Center that serves as an ombudsman for small businesses, reviewing proposed state rules and advocating for reduced regulatory burden.</p><blockquote>the Regulatory Flexibility Program works with business organizations and groups to determine ways to make rules more flexible, cost effective or less restrictive.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/regulatory-assistance-program.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/regulatory-assistance-program.html</a></div></div>
+<div class="svc"><h3>Step by Step Guide to Starting a Business</h3><span class="tag">Startup Business Counseling</span><p>A guide walking new entrepreneurs through business ownership structure choices, registration steps, employer responsibilities, and intellectual property protection.</p><blockquote>This guide will inform you of various legal requirements and direct you to additional resources.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/beginhere/stepbystepguide.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/beginhere/stepbystepguide.html</a></div></div>
+<div class="svc"><h3>Advantage Illinois</h3><span class="tag">Government Funding</span><span class="tag">Loan Providers</span><p>A DCEO financing program comprised of the Capital Access Program and Participation Loan Program to spur institutional lending to Illinois small businesses.</p><blockquote>provides Illinois businesses and entrepreneurs with access to the capital to start new companies and expand existing business</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/financing.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/financing.html</a></div></div>
+<div class="svc"><h3>Advancing the Development of Minority Entrepreneurship (ADME)</h3><span class="tag">Government Funding</span><p>A DCEO investment program aimed at strengthening Illinois&#x27; start-up and small business community by supporting minority entrepreneurs.</p><blockquote>Advancing the Development of Minority Entrepreneurship is an investment program developed to strengthen Illinois&#x27; start-up and small business community by tapping into the potential of minority entrepreneurs.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/financing.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/financing.html</a></div></div>
+<div class="svc"><h3>Locations for Your Business (LocationOne Information System)</h3><span class="tag">Site Location</span><span class="tag">Site Location Assistance</span><p>A statewide site-selection database maintained with partner communities that helps businesses search for commercial, industrial, and pre-qualified large industrial sites.</p><blockquote>The Illinois Department of Commerce provides the LocationOne Information System (LOIS) for conducting searches on available commercial and industrial sites and building locations throughout Illinois.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/locationsforyourbusiness.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/locationsforyourbusiness.html</a></div></div>
+<div class="svc"><h3>International Business Services / Export Assistance</h3><span class="tag">Identification/Research of Foreign Markets</span><span class="tag">International Trade Education and Training</span><p>The Office of Trade and Investment helps small and medium-sized Illinois businesses expand their global reach and export abroad through a network of professionals and overseas offices.</p><blockquote>The Illinois Department of Commerce Office of Trade and Investment (OTI) opens overseas markets for Illinois companies and promotes foreign direct investment in Illinois.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/export.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/export.html</a></div></div>
+<div class="svc"><h3>Office of Regional Economic Development (Team RED)</h3><span class="tag">Economic Development</span><span class="tag">Site Location Assistance</span><p>A regional team offering free, confidential site selection, customized workforce training, expedited permitting, and connections to local stakeholders for companies expanding or relocating in Illinois.</p><blockquote>the office of Team RED provides free and confidential services to companies seeking to expand or relocate within Illinois.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/regionspecificassistance.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/regionspecificassistance.html</a></div></div>
+<div class="svc"><h3>Illinois Compliance Advisory Panel</h3><span class="tag">Environmental Compliance</span><p>A federally mandated advisory panel that, alongside a technical assistance program and ombudsman, forms Illinois&#x27; small-business regulatory compliance assistance program.</p><blockquote>The Illinois Compliance Advisory Panel is a federally mandated advisory group under the Clean Air Act Amendments of 1990.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/compliance-advisory-panel.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/compliance-advisory-panel.html</a></div></div>
+<div class="svc"><h3>ROSS - Registration of Smaller Sources Program</h3><span class="tag">Registration, Licenses and Permits</span><p>The Environmental Assistance Program administers the Registration of Smaller Sources (ROSS) program, providing application forms, FAQs, training materials, and fee payment for small sources to register with the Illinois EPA Bureau of Air Permit Section.</p><blockquote>To minimize the need for follow-up inquiry from the Illinois EPA Bureau of Air Permit Section, ROSS registration submittals should be made using the most recent version.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-rossprogram.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-rossprogram.html</a></div></div>
+<div class="svc"><h3>Regulatory Alerts</h3><span class="tag">Government Requirements</span><p>The DCEO Office of Regulatory Flexibility compiles Regulatory Alerts summarizing proposed state agency rulemakings that could affect small businesses.</p><blockquote>A summary of rulemakings proposed by Illinois state agencies that may have an impact on small businesses.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-environmentalregulations.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-environmentalregulations.html</a></div></div>
+<div class="svc"><h3>Environmental Regulations Guidance</h3><span class="tag">Environmental Compliance</span><p>The Environmental Assistance Program compiles and links small businesses to the state and federal environmental regulations and regulatory agencies relevant to their operations.</p><blockquote>The following are links to many of the state and federal environmental regulations and regulatory agencies that small businesses must deal with on a regular basis.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-environmentalregulations.html" rel="noopener nofollow">https://dceo.illinois.gov/smallbizassistance/environmentalassistanceprogram/sbeap-environmentalregulations.html</a></div></div>
+<div class="svc"><h3>Low Interest Loan Programs</h3><span class="tag">Loan Providers</span><span class="tag">Microloan Providers</span><p>Advantage Illinois provides low interest loans to small businesses in Illinois for start-up costs, working capital, equipment and inventory.</p><blockquote>Advantage Illinois provides low interest loans to small businesses in Illinois for start-up costs, working capital, equipment and inventory.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html" rel="noopener nofollow">https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html</a></div></div>
+<div class="svc"><h3>Cannabis Social Equity</h3><span class="tag">Grant Funding Providers</span><span class="tag">Loan Providers</span><p>The Cannabis Loan Program helps support Social Equity Applicants obtain the capital necessary to operate a dispensary, craft grow or transporter business in the cannabis industry.</p><blockquote>The Cannabis Loan Program helps support Social Equity Applicants obtain the capital necessary to operate a dispensary, craft grow or transporter business in the cannabis industry.</blockquote><div class="meta"><a href="https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html" rel="noopener nofollow">https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

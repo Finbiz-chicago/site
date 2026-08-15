@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repertoire - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html" aria-current=page>Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+
+<h1>Repertoire</h1>
+<p class="lede">52 organisations, 579 services, chacun accompagne de l'extrait
+qui le prouve et du lien vers sa source.</p>
+<div class="grid"><a href="allies_for_community_business.html">Allies for Community Business<span class="n">15 services</span></a><a href="apparel_industry_board_inc.html">Apparel Industry Board, Inc.<span class="n">9 services</span></a><a href="asian_american_chamber_of_commerce.html">Asian American Chamber of Commerce of Illinois<span class="n">4 services</span></a><a href="austin_coming_together.html">Austin Coming Together<span class="n">4 services</span></a><a href="black_alliance_of_colleges_and_emp.html">Business Alliance of Colleges and Employers (BACE)<span class="n">5 services</span></a><a href="builders_avenue.html">Business Services Collective, NFP DBA Builders Avenue<span class="n">11 services</span></a><a href="calumet_area_industrial_commission.html">Calumet Area Industrial Commission<span class="n">17 services</span></a><a href="changing_oasis_inc.html">Changing Oasis, Inc.<span class="n">1 service</span></a><a href="chicago_department_of_business_aff.html">Chicago Department of Business Affairs and Consumer Protection (BACP)<span class="n">17 services</span></a><a href="chicago_s_sunshine_enterprises_inc.html">Chicago&#x27;s Sunshine Enterprises, Inc.<span class="n">13 services</span></a><a href="sbdc_at_cmaa.html">Chinese Mutual Aid Association (CMAA)<span class="n">11 services</span></a><a href="community_reinvestment_fund_usa.html">Community Reinvestment Fund, USA<span class="n">12 services</span></a><a href="defy_ventures.html">Defy Ventures, Inc.<span class="n">5 services</span></a><a href="depaul_university_coleman_entrepre.html">DePaul University, Coleman Entrepreneurship Center<span class="n">7 services</span></a><a href="dishroulette_kitchen.html">DishRoulette Kitchen NFP<span class="n">9 services</span></a><a href="edgewater_chamber_of_commerce.html">Edgewater Chamber of Commerce<span class="n">11 services</span></a><a href="the_entrepreneurial_development_an.html">Entrepreneurial Development and Leadership Institute (EDLI)<span class="n">2 services</span></a><a href="entrepreneurs_academy.html">Entrepreneurs Academy<span class="n">11 services</span></a><a href="far_south_cdc.html">Far South Community Development Corporation<span class="n">7 services</span></a><a href="garfield_park_chamber_of_commerce.html">Garfield Park Chamber of Commerce<span class="n">8 services</span></a><a href="greater_auburn_gresham_development.html">Greater Auburn Gresham Development Corporation<span class="n">8 services</span></a><a href="greater_ravenswood_chamber_of_comm.html">Greater Ravenswood Chamber of Commerce<span class="n">24 services</span></a><a href="greater_southwest_development_corp.html">Greater Southwest Development Corporation<span class="n">13 services</span></a><a href="green_city_market.html">Green City Market<span class="n">4 services</span></a><a href="hacia.html">Hispanic American Construction Industry Association (HACIA)<span class="n">19 services</span></a><a href="iff.html">IFF (formerly Illinois Facilities Fund)<span class="n">18 services</span></a><a href="illinois_hispanic_chamber_of_comme.html">Illinois Hispanic Chamber of Commerce<span class="n">11 services</span></a><a href="illinois_sbdc_network.html">Illinois Small Business Development Center Network<span class="n">18 services</span></a><a href="make_city.html">Industrial Council of Nearwest Chicago (ICNC) / Make City<span class="n">4 services</span></a><a href="lakeview_roscoe_village_chamber.html">Lakeview Roscoe Village Chamber of Commerce<span class="n">12 services</span></a><a href="lincoln_park_chamber_of_commerce.html">Lincoln Park Chamber of Commerce<span class="n">7 services</span></a><a href="foundation_of_little_village.html">Little Village Community Foundation Corp<span class="n">13 services</span></a><a href="lisc_chicago.html">Local Initiatives Support Corporation (LISC) - LISC Chicago<span class="n">8 services</span></a><a href="nawbo_chicago.html">National Association of Women Business Owners - Chicago (NAWBO Chicago)<span class="n">6 services</span></a><a href="national_black_mba_association.html">National Black MBA Association, Chicago Chapter<span class="n">6 services</span></a><a href="native_american_chamber_of_commerc.html">Native American Chamber of Commerce of Illinois<span class="n">9 services</span></a><a href="north_branch_works.html">North Branch Works<span class="n">9 services</span></a><a href="north_river_commission_albany_park.html">North River Commission<span class="n">9 services</span></a><a href="pulaski_elston_business_associatio.html">Pulaski Elston Business Association, Inc.<span class="n">13 services</span></a><a href="quad_communities_development_corpo.html">Quad Communities Development Corporation<span class="n">6 services</span></a><a href="rogers_park_business_alliance.html">Rogers Park Business Alliance<span class="n">23 services</span></a><a href="score_chicago.html">SCORE Chicago<span class="n">10 services</span></a><a href="six_corners_association.html">Six Corners Association<span class="n">5 services</span></a><a href="somercor.html">SomerCor 504, Inc.<span class="n">15 services</span></a><a href="small_business_administration_illi.html">U.S. Small Business Administration - Illinois District Office<span class="n">8 services</span></a><a href="uptown_business_center.html">Uptown Business Center<span class="n">6 services</span></a><a href="uptown_chamber_of_commerce.html">Uptown Chamber of Commerce<span class="n">43 services</span></a><a href="us_pan_asian_american_chamber_of_c.html">US Pan Asian American Chamber of Commerce Midwest<span class="n">6 services</span></a><a href="veterans_business_outreach_center_.html">Veterans Business Outreach Center (VBOC) at WWBIC<span class="n">5 services</span></a><a href="illinois_sbdc_international_trade_.html">Women&#x27;s Business Development Center (WBDC)<span class="n">38 services</span></a><a href="women_s_entrepreneurship_hub_we_hu.html">Women&#x27;s Entrepreneurship Hub (WE Hub)<span class="n">9 services</span></a><a href="woodlawn_chamber_of_commerce.html">Woodlawn Chamber of Commerce<span class="n">15 services</span></a></div>
+
+<h2>En attente de confirmation</h2>
+<p>2 organisations ne sont pas publiees. Chacune attend une confirmation qui ne
+peut venir que de l'organisation elle-meme. Elles ne sont ni retirees ni oubliees.</p>
+<ul><li>Belmont-Central Chamber of Commerce</li><li>UIC Business (College of Business Administration, University of Illinois Chicago)</li></ul>
+<p class="note">Les raisons detaillees sont des evaluations internes portant sur des tiers.
+Elles sont communiquees aux partenaires du repertoire, pas publiees ici.</p>
+
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

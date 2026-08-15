@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greater Southwest Development Corporation - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Greater Southwest Development Corporation</h1>
+<p class="lede">To be a catalyst for creating and maintaining a vital Southwest Chicago community by empowering, building and sustaining development that raises the quality of life for our neighborhood residents, businesses and industries.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://greatersouthwest.org" rel="noopener nofollow">https://greatersouthwest.org</a></td></tr><tr><td>Adresse</td><td>2601 W. 63rd St., Chicago, IL 60629</td></tr><tr><td>Telephone</td><td>(773) 436-1000</td></tr><tr><td>Courriel</td><td>financialservices@greatersouthwest.org</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">13</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Business Advising</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>GSDC business advisors provide one-on-one guidance to business owners and entrepreneurs across access to capital, business/marketing plan assistance, international trade, procurement, certifications, and licensing.</p><blockquote>GSDC provides guidance and support to business owners and entrepreneurs to start, grow or transition their business.</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/business-advising/" rel="noopener nofollow">https://greatersouthwest.org/services/business-advising/</a></div></div>
+<div class="svc"><h3>Neighborhood Business Development Center (NBDC) - Place Based Generalist</h3><span class="tag">Business Plan Consulting</span><span class="tag">Registration, Licenses and Permits</span><p>GSDC operates a City-designated Neighborhood Business Development Center providing hyper-local business development assistance including licensing/permits, business plan development, marketing assistance, and access to training and resources.</p><blockquote>provides NBDC standard business development assistance, which include but not limited to helping business owners and entrepreneurs apply for business license(s) and public way use permit(s)</blockquote><div class="meta"><a href="https://greatersouthwest.org/neighborhood-business-development-centers/" rel="noopener nofollow">https://greatersouthwest.org/neighborhood-business-development-centers/</a></div></div>
+<div class="svc"><h3>NBDC Industry Specialist Program</h3><span class="tag">Manufacturing Development</span><span class="tag">Startup Business Counseling</span><p>GSDC provides industry-specific NBDC support for Arts/Entertainment/Media, Construction, Food &amp; Beverage, and Transportation/Logistics businesses, guiding startup and scaling and connecting clients to new markets.</p><blockquote>provides industry-specific support for start-up and mature businesses in key foundational and growth industries</blockquote><div class="meta"><a href="https://greatersouthwest.org/neighborhood-business-development-centers/" rel="noopener nofollow">https://greatersouthwest.org/neighborhood-business-development-centers/</a></div></div>
+<div class="svc"><h3>Business Academy</h3><span class="tag">Business Management Training</span><p>GSDC&#x27;s own Business Academy delivers multi-week training programs led by subject matter experts to local business owners and entrepreneurs, with networking and partner access built in.</p><blockquote>Business owners who participate in our training programs will improve their business by developing strategies that will positively impact their profits.</blockquote><div class="meta"><a href="https://greatersouthwest.org/business-academy/" rel="noopener nofollow">https://greatersouthwest.org/business-academy/</a></div></div>
+<div class="svc"><h3>Basic Financials For Business training</h3><span class="tag">Budget, Cash Flow and Financial Statements Training</span><p>A Business Academy module covering cost of labor, inventory/cost of goods, operational expenses, profit and loss statements, credit improvement, and access to capital.</p><blockquote>participants will learn how to manage and understand the percentage of the cost of labor in proportion to their sales</blockquote><div class="meta"><a href="https://greatersouthwest.org/business-academy/" rel="noopener nofollow">https://greatersouthwest.org/business-academy/</a></div></div>
+<div class="svc"><h3>The Basics of Employee Management training</h3><span class="tag">Human Resources Training</span><p>A Business Academy module covering recruitment, onboarding, employee development, and offboarding for small business owners.</p><blockquote>participants will learn how to attract and recruit the best employees for their business, how to onboard these new employees to reduce turnover</blockquote><div class="meta"><a href="https://greatersouthwest.org/business-academy/" rel="noopener nofollow">https://greatersouthwest.org/business-academy/</a></div></div>
+<div class="svc"><h3>Community Development / Capacity Building</h3><span class="tag">Economic Development</span><p>GSDC builds capacity in the Southwest Side commercial corridors by facilitating relationships between residents, business owners, and government at the state, city, and neighborhood levels.</p><blockquote>GSDC focuses on capacity building by developing and sustaining healthy and productive relationships with local residents, business owners, elected officials, local community members, and leaders.</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/community-development/" rel="noopener nofollow">https://greatersouthwest.org/services/community-development/</a></div></div>
+<div class="svc"><h3>Real Estate Development (commercial/industrial)</h3><span class="tag">Economic Development</span><span class="tag">Feasibility Studies</span><span class="tag">Revitalization</span><p>GSDC acquires, rehabs and repurposes property for community and commercial good, including business incubator space such as Bridgewater Studios, using tools like NOF and SBIF.</p><blockquote>This includes identifying properties for redevelopment, completing feasibility studies, and securing financing, construction management, marketing, and rental or sale, either directly or with a development partner.</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/real-estate-development/" rel="noopener nofollow">https://greatersouthwest.org/services/real-estate-development/</a></div></div>
+<div class="svc"><h3>Special Service Area (SSA) Fund Management</h3><span class="tag">Revitalization</span><p>GSDC administers Special Service Area #3 and #59 funds, supporting commercial corridor beautification and small rebates for local property and business owners.</p><blockquote>Additionally, we manage over $2M in Special Service Area funds for two different SSAs in our area.</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/business-advising/" rel="noopener nofollow">https://greatersouthwest.org/services/business-advising/</a></div></div>
+<div class="svc"><h3>COVID-19 Emergency Business Response Assistance</h3><span class="tag">Disaster Loans and Grants</span><p>GSDC directly assisted local businesses in applying for and receiving pandemic-related emergency response loans and grants.</p><blockquote>During the COVID-19 crisis we assisted local businesses apply for and receive nearly $5M in emergency response loans and grants.</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/business-advising/" rel="noopener nofollow">https://greatersouthwest.org/services/business-advising/</a></div></div>
+<div class="svc"><h3>Special Service Area #3 (Sole Service Provider)</h3><span class="tag">Economic Development</span><span class="tag">Geographically Based</span><p>GSDC is the designated sole service provider for the SSA #3 tax district, running special events, beautification, marketing, rebate programs, and training for property and business owners within its boundaries.</p><blockquote>The Greater Southwest Development Corporation is the sole service provider for Special Service Area (SSA) #3.</blockquote><div class="meta"><a href="https://greatersouthwest.org/special-service-area-3/" rel="noopener nofollow">https://greatersouthwest.org/special-service-area-3/</a></div></div>
+<div class="svc"><h3>Elected Official / City Department Connections for Businesses</h3><span class="tag">City Business Issues</span><p>GSDC connects local businesses with elected officials such as Aldermen and state representatives, and links them to various city departments.</p><blockquote>Conexión con los  funcionarios locales electos tales como Alderman y representantes estatales</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/business-owners/?lang=es" rel="noopener nofollow">https://greatersouthwest.org/services/business-owners/?lang=es</a></div></div>
+<div class="svc"><h3>Loan and Grant Application Assistance</h3><span class="tag">Government Funding</span><span class="tag">Loan Providers</span><p>GSDC helps small businesses with applications for loans and grants/subsidies.</p><blockquote>Ayuda con las aplicaciones para préstamos y subvenciones o becas para pequeños negocios</blockquote><div class="meta"><a href="https://greatersouthwest.org/services/business-owners/?lang=es" rel="noopener nofollow">https://greatersouthwest.org/services/business-owners/?lang=es</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

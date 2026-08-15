@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apparel Industry Board, Inc. - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Apparel Industry Board, Inc.</h1>
+<p class="lede">AIBI nurtures the textile and sewn products community.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.aibi.com" rel="noopener nofollow">https://www.aibi.com</a></td></tr><tr><td>Adresse</td><td>2021 W Fulton St, Suite K-111, Chicago, IL 60612</td></tr><tr><td>Telephone</td><td>(312) 836-1041</td></tr><tr><td>Courriel</td><td>aibi@aibi.com</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">9</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>AIBI Fashion Lab (Shared Manufacturing &amp; Makerspace)</h3><span class="tag">Coworking</span><span class="tag">Makerspace / Hackerspace</span><p>A rentable shared production space with Gerber pattern-making technology and 11 industrial sewing machines available by day pass or monthly pass for prototyping and small-scale production.</p><blockquote>Our shared manufacturing and innovation space, The Fashion Lab, features TUKAcad technology, professional-grade industrial sewing and finishing equipment, and expert instruction led by industry professionals and educators.</blockquote><div class="meta"><a href="https://www.aibi.com/" rel="noopener nofollow">https://www.aibi.com/</a></div></div>
+<div class="svc"><h3>Fashion Brand Incubator (Cohort Program)</h3><span class="tag">Incubator</span><span class="tag">Startup Classes</span><p>A 12-week live virtual cohort program taking emerging fashion entrepreneurs from brand concept through a launch-ready hero product, with weekly instruction from industry experts.</p><blockquote>The AIBI Fashion Brand Incubator is a 12-week, cohort-based virtual program designed to take you from idea to launch-ready fashion brand.</blockquote><div class="meta"><a href="https://www.aibi.com/cohortsinspireandgrowth" rel="noopener nofollow">https://www.aibi.com/cohortsinspireandgrowth</a></div></div>
+<div class="svc"><h3>1-Hour Business Mentoring Session</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>A bookable one-on-one mentoring session offering guidance on career path and business development, available at member and non-member rates.</p><blockquote>Get guidance for your career path and development</blockquote><div class="meta"><a href="https://www.aibi.com/booking-calendar/1-hour-business-mentoring-session" rel="noopener nofollow">https://www.aibi.com/booking-calendar/1-hour-business-mentoring-session</a></div></div>
+<div class="svc"><h3>1-on-1 Single Needle Machine Introduction</h3><span class="tag">Trade Education and Training</span><p>A paid, bookable two-hour one-on-one training session teaching proficiency on the industrial single needle sewing machine at the Fashion Lab.</p><blockquote>A 2 hour introduction to the Single Needle Industrial Machine</blockquote><div class="meta"><a href="https://www.aibi.com/book-online" rel="noopener nofollow">https://www.aibi.com/book-online</a></div></div>
+<div class="svc"><h3>Member 1-on-1 Line Sheet Workshop</h3><span class="tag">Product Design and Development</span><p>A bookable one-hour virtual workshop, for members, to build a sales line sheet for their fashion collection.</p><blockquote>1-hour virtual appointment to create a line sheet for your collection</blockquote><div class="meta"><a href="https://www.aibi.com/book-online" rel="noopener nofollow">https://www.aibi.com/book-online</a></div></div>
+<div class="svc"><h3>Materials Sourcing Retail Guide</h3><span class="tag">Business Research Resources</span><p>A curated directory AIBI compiles and maintains of local, in-person Chicagoland retail sources for fabric, notions, sewing machines, and related supplies.</p><blockquote>Many people have been asking where they can go to find fabric and other things, especially now that JoAnn Fabrics is closing store locations across the country.</blockquote><div class="meta"><a href="https://www.aibi.com/materials-sourcing-chicago" rel="noopener nofollow">https://www.aibi.com/materials-sourcing-chicago</a></div></div>
+<div class="svc"><h3>Apparel Industry Board Association</h3><span class="tag">Industry Specific</span><p>AIBI is the official Illinois association dedicated to the sewn products industry, bringing together designers, manufacturers, merchandisers, and retailers across Greater Chicago.</p><blockquote>The Apparel Industry Board, Inc. (AIBI), a 501©3, is the only official organization in Illinois specifically dedicated to the needs of the sewn products industry.</blockquote><div class="meta"><a href="https://www.aibi.com/about-us" rel="noopener nofollow">https://www.aibi.com/about-us</a></div></div>
+<div class="svc"><h3>Mentoring and Educational Seminars</h3><span class="tag">Formal Mentoring Programs</span><span class="tag">One-on-One Counseling</span><p>AIBI runs mentoring and educational seminars that have helped place people in manufacturing jobs since 1987.</p><blockquote>helped to place hundreds of people in manufacturing jobs, and reached thousands of people to date through its mentoring and educational seminars</blockquote><div class="meta"><a href="https://www.aibi.com/about-us" rel="noopener nofollow">https://www.aibi.com/about-us</a></div></div>
+<div class="svc"><h3>AIBI Student Ambassador Program</h3><span class="tag">Internship Program</span><span class="tag">Youth Entrepreneurship Education</span><p>A program in which fashion, textile, and design students become campus ambassadors, gaining industry mentorship, networking, and tools to launch a brand or find a job.</p><blockquote>We&#x27;re building a community of student leaders who want to make fashion more accessible, more innovative, and more connected.</blockquote><div class="meta"><a href="https://www.aibi.com/event-details/aibi-student-ambassador-q-a-virtual-event" rel="noopener nofollow">https://www.aibi.com/event-details/aibi-student-ambassador-q-a-virtual-event</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

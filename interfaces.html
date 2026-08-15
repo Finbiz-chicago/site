@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interfaces - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Accueil</a><a href="architecture.html">Architecture</a><a href="interfaces.html" aria-current=page>Interfaces</a><a href="run.html">Executer</a><a href="contribute.html">Contribuer</a><a href="directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+
+<h1>Interfaces</h1>
+<p class="lede">Ce que chaque systeme recoit, ce qu'il rend, et ce qu'il garantit. La methode
+employee pour y arriver n'est pas publique.</p>
+
+<h2>Scraper</h2>
+<table class="kv">
+<tr><td>Entree</td><td>Une organisation et l'adresse de son site.</td></tr>
+<tr><td>Sortie</td><td>Un paquet : profil de l'organisation, liste de services, et pour
+chaque service un extrait verbatim avec l'adresse de la page qui le porte.</td></tr>
+<tr><td>Garantie</td><td>Tout service rendu porte un extrait d'au moins huit mots, present
+litteralement sur une page de l'organisation. Les comparaisons ignorent les espaces et les
+caracteres invisibles. Un service sans extrait n'est jamais rendu.</td></tr>
+<tr><td>Limites</td><td>Un site qui refuse les acces automatises ne produit pas de paquet.
+L'echec est enregistre comme tel, jamais comble par une supposition.</td></tr>
+<tr><td>Non public</td><td>La strategie d'exploration, l'extraction, le codage des services
+et le detail des controles internes.</td></tr>
+</table>
+
+<h2>RAG</h2>
+<table class="kv">
+<tr><td>Entree</td><td>Une question en langage naturel.</td></tr>
+<tr><td>Sortie</td><td>Des passages pertinents, chacun accompagne de l'organisation et de
+l'adresse dont il provient.</td></tr>
+<tr><td>Garantie</td><td>Aucun passage rendu sans sa source. Le systeme ne repond que sur le
+contenu des paquets ; il ne complete pas avec des connaissances generales.</td></tr>
+<tr><td>Limites</td><td>Ce qui n'est pas dans un paquet n'existe pas pour lui. Une reponse
+vide est une reponse valide.</td></tr>
+<tr><td>Non public</td><td>Le decoupage, la representation vectorielle, la recuperation et
+le classement.</td></tr>
+</table>
+
+<h2>Chatbot</h2>
+<table class="kv">
+<tr><td>Entree</td><td>Un message, envoye a un point d'entree HTTP.</td></tr>
+<tr><td>Sortie</td><td>Une reponse redigee, avec les sources qui la soutiennent.</td></tr>
+<tr><td>Garantie</td><td>Les sources affichees sont celles rendues par le RAG, sans ajout.</td></tr>
+<tr><td>Non public</td><td>L'orchestration et les instructions donnees au modele.</td></tr>
+</table>
+
+<h2>Repertoire public</h2>
+<table class="kv">
+<tr><td>Entree</td><td>Les paquets.</td></tr>
+<tr><td>Sortie</td><td>Des pages HTML statiques, sans script ni appel reseau.</td></tr>
+<tr><td>Garantie</td><td>Rien n'est affiche sans sa citation et son lien. La construction
+echoue plutot que de publier une exception.</td></tr>
+</table>
+
+<h2>Le format pivot</h2>
+<p>Un paquet est un dossier par organisation. Les consommateurs en aval ne lisent que ces
+deux fichiers :</p>
+<div class="scroll"><pre>
+organization_profile.json    identite, adresse, contacts, mission
+services_programs.json       liste de services ; par service :
+                               canonical_name           le nom du service
+                               description              ce qu'il fait
+                               grounding_quote          l'extrait verbatim
+                               source_urls              ou l'extrait se trouve
+                               service_classifications  ses categories
+                               review_decision          l'etat de relecture
+</pre></div>
+<p class="note">Un service dont la decision commence par <code>NOT a SourceLink service</code>
+a ete ecarte volontairement, avec sa raison ecrite. Il reste dans le paquet : une exclusion
+tracee vaut mieux qu'une suppression silencieuse.</p>
+
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>

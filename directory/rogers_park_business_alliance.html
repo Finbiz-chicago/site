@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rogers Park Business Alliance - FinBiz</title>
+<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<style>
+:root{
+  --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
+  --accent:#8a5a2b; --accent-soft:#f2e9dd; --quote:#4a4238; --ok:#3f6d4e; --wait:#8a6d1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+    --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --panel:#1d1a15; --ink:#ece7de; --muted:#9a9083; --line:#332d25;
+  --accent:#d9a066; --accent-soft:#2a231a; --quote:#c9c0b2; --ok:#7fb894; --wait:#d4b25e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Iowan Old Style",serif;}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--line);margin-bottom:2.5rem;
+  background:var(--panel)}
+header.top .wrap{padding-top:1.1rem;padding-bottom:1.1rem;display:flex;
+  flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+header.top a.brand{font-weight:700;color:var(--ink);text-decoration:none;font-size:1.05rem;
+  letter-spacing:.01em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.86rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--accent)}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em;letter-spacing:-.01em}
+h2{font-size:1.3rem;margin:2.4rem 0 .6rem;letter-spacing:-.005em}
+h3{font-size:1.02rem;margin:1.6rem 0 .35rem}
+p{margin:.7em 0}
+.lede{font-size:1.12rem;color:var(--muted);margin-bottom:1.6rem}
+a{color:var(--accent)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:1rem 1.1rem;overflow-x:auto;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:1.1rem 1.2rem;margin:1rem 0}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.grid a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.85rem 1rem;text-decoration:none;color:var(--ink)}
+.grid a:hover{border-color:var(--accent)}
+.grid .n{display:block;font-size:.78rem;color:var(--muted);margin-top:.25rem;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin:1.4rem 0;padding:1.1rem 1.2rem;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.stats div{min-width:7rem}
+.stats b{display:block;font-size:1.7rem;line-height:1.1;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted);
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.svc{border-top:1px solid var(--line);padding:1.1rem 0}
+.svc:first-of-type{border-top:none}
+.svc h3{margin:0 0 .3rem}
+blockquote{margin:.6rem 0;padding:.5rem 0 .5rem 1rem;border-left:3px solid var(--accent-soft);
+  color:var(--quote);font-style:italic}
+.meta{font-size:.8rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif;
+  margin-top:.4rem;word-break:break-word}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  border-radius:999px;padding:.1rem .6rem;font-size:.75rem;margin:.15rem .25rem .15rem 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-style:normal}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--line);
+  padding-left:.9rem;margin:1.2rem 0}
+.kv{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+.kv td{border-top:1px solid var(--line);padding:.45rem .4rem;vertical-align:top}
+.kv td:first-child{color:var(--muted);width:11rem;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-size:.85rem}
+.scroll{overflow-x:auto}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
+  font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../index.html">FinBiz</a><nav><a href="../index.html">Accueil</a><a href="../architecture.html">Architecture</a><a href="../interfaces.html">Interfaces</a><a href="../run.html">Executer</a><a href="../contribute.html">Contribuer</a><a href="../directory/index.html">Repertoire</a></nav>
+</div></header>
+<div class="wrap">
+<h1>Rogers Park Business Alliance</h1>
+<p class="lede">Rogers Park Business Alliance cultivates and sustains a thriving economic environment in Rogers Park, serving businesses and residents.</p>
+<div class="scroll"><table class="kv"><tr><td>Site web</td><td><a href="https://www.rpba.org/" rel="noopener nofollow">https://www.rpba.org/</a></td></tr><tr><td>Adresse</td><td>1448 W. Morse Ave., Chicago, IL 60626</td></tr><tr><td>Telephone</td><td>(773) 508-5885</td></tr><tr><td>Courriel</td><td>info@rpba.org</td></tr><tr><td>Langues</td><td>English; Spanish</td></tr><tr><td>Territoire</td><td>Chicago</td></tr><tr><td>Public vise</td><td>Small businesses / entrepreneurs</td></tr></table></div>
+<h2>Services publies <span class="tag">23</span></h2>
+<p class="note">Chaque service ci-dessous est accompagne d'un extrait repris mot pour mot du site de l'organisation, et du lien vers la page qui le contient. C'est la garantie du repertoire : rien n'est publie sans sa source.</p>
+<div class="svc"><h3>Rogers Park Business Alliance (geographic business alliance)</h3><span class="tag">Geographically Based</span><p>RPBA is itself the neighborhood business alliance for Rogers Park, organizing local business owners, residents and stakeholders around business, community and economic development.</p><blockquote>Rogers Park Business Alliance (RPBA) is a 501c3 non-profit organization established in 1993.</blockquote><div class="meta"><a href="https://rpba.org/about-us/" rel="noopener nofollow">https://rpba.org/about-us/</a></div></div>
+<div class="svc"><h3>GROW/PROGRESANDO Entrepreneurial Training Program</h3><span class="tag">Business Plan Consulting</span><span class="tag">Startup Business Counseling</span><span class="tag">Startup Classes</span><p>RPBA&#x27;s own entrepreneurial training program (offered in English as GROW and Spanish as PROGRESANDO) that helps entrepreneurs build a feasible business plan.</p><blockquote>Our entrepreneurial training program, GROW provides visionary entrepreneurs with the resources and tools necessary to create a feasible business plan.</blockquote><div class="meta"><a href="https://rpba.org/about-us/" rel="noopener nofollow">https://rpba.org/about-us/</a></div></div>
+<div class="svc"><h3>Illinois SBDC at RPBA</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>RPBA hosts and staffs an Illinois Small Business Development Center office providing confidential guidance, training, marketing/business plan assistance and financial analysis to startup and existing businesses.</p><blockquote>The Illinois Small Business Development Center at Rogers Park Business Alliance provides information, confidential business guidance, training and other resources to start-up and existing small businesses.</blockquote><div class="meta"><a href="https://rpba.org/our-partners/" rel="noopener nofollow">https://rpba.org/our-partners/</a></div></div>
+<div class="svc"><h3>Business Accessibility Toolkit (BAT)</h3><span class="tag">Diversity Equity and Inclusion</span><p>A no-cost toolkit program coordinated through RPBA&#x27;s SBDC office giving minority-owned, non-English-speaking businesses access to a portfolio of professional consultants.</p><blockquote>the Illinois Small Business Development Center (SBDC) at Rogers Park Business Alliance (RPBA) is launching Business Accessibility Toolkit (BAT).</blockquote><div class="meta"><a href="https://rpba.org/business-accessibility-toolkit/" rel="noopener nofollow">https://rpba.org/business-accessibility-toolkit/</a></div></div>
+<div class="svc"><h3>RPBA Help Desk</h3><span class="tag">One-on-One Counseling</span><span class="tag">Startup Business Counseling</span><p>RPBA-run help desk staffed by RPBA&#x27;s Sustainability Director offering direct one-on-one business assistance.</p><blockquote>manages RPBA Help Desk, leads RPBA’s Capital Access Initiative, is an Advisor to Illinois Small Business Development Center</blockquote><div class="meta"><a href="https://rpba.org/our-people/" rel="noopener nofollow">https://rpba.org/our-people/</a></div></div>
+<div class="svc"><h3>Capital Access Initiative</h3><span class="tag">Accounting and Bookkeeping</span><span class="tag">Loan Providers</span><p>RPBA&#x27;s own initiative, led by its Sustainability Director, focused on connecting local entrepreneurs to capital and financing.</p><blockquote>leads RPBA’s Capital Access Initiative, is an Advisor to Illinois Small Business Development Center, assists with organizational fundraising initiatives</blockquote><div class="meta"><a href="https://rpba.org/our-people/" rel="noopener nofollow">https://rpba.org/our-people/</a></div></div>
+<div class="svc"><h3>Small Business Opportunity Center (SBOC)</h3><span class="tag">Loan Providers</span><span class="tag">Startup Business Counseling</span><p>RPBA operates the only Small Business Opportunity Center on Chicago&#x27;s north side, offering free consultations for businesses seeking capital to start, expand, or grow.</p><blockquote>RPBA is the only Small Business Opportunity Center (SBOC) on the northside of Chicago.</blockquote><div class="meta"><a href="https://rpba.org/helpful-links/" rel="noopener nofollow">https://rpba.org/helpful-links/</a></div></div>
+<div class="svc"><h3>Business Plan Review, Market Info &amp; Permitting Assistance</h3><span class="tag">Business Plan Consulting</span><span class="tag">Registration, Licenses and Permits</span><p>RPBA directly provides business plan reviews, market information access, and hands-on assistance with permitting, licensing and leasing issues for area entrepreneurs.</p><blockquote>We offer business plan reviews, access to market information and lender referrals and assistance with permitting, license and leasing issues.</blockquote><div class="meta"><a href="https://rpba.org/helpful-links/" rel="noopener nofollow">https://rpba.org/helpful-links/</a></div></div>
+<div class="svc"><h3>NBDC Standard Business Development Assistance</h3><span class="tag">Registration, Licenses and Permits</span><span class="tag">Startup Business Counseling</span><p>As a City of Chicago NBDC delegate agency, RPBA delivers hyper-local business development services including licensing/permit help, business plan development, marketing and workforce assistance.</p><blockquote>We provide NBDC standard business development assistance, which includes but not limited to helping business owners and entrepreneurs apply for business license(s) and public way use permit(s)</blockquote><div class="meta"><a href="https://rpba.org/our-partners/" rel="noopener nofollow">https://rpba.org/our-partners/</a></div></div>
+<div class="svc"><h3>SSA #24 Criminal Damage Repair Program</h3><span class="tag">Grant Funding Providers</span><span class="tag">Matching Fund Providers</span><p>RPBA-run rebate program (50% of costs, up to $2,000) helping SSA #24 businesses cover emergency storefront repairs from vandalism or criminal damage.</p><blockquote>We provide assistance to businesses making emergency storefront repairs in response to criminal damage or vandalism by offering a rebate of 50% of repair expenses</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>SSA #24 Small Business Improvement Fund (SBIF)</h3><span class="tag">Real Estate Finance</span><p>Provides up to a 50% rebate (up to $150,000) plus financial and technical assistance for building/business improvements within the TIF district.</p><blockquote>We promote and revitalize the commercial buildings within the Tax Increment Financing District by providing financial advice and technical assistance to the owners and tenants who wish to improve their storefronts.</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>SSA #24 Tenant Retention/Attraction</h3><span class="tag">Recruiting</span><span class="tag">Site Location Assistance</span><p>RPBA runs business attraction workshops, recruitment presentations and on-site technical assistance visits to retain and attract tenants in SSA #24 corridors.</p><blockquote>We hold business attraction workshops and give presentations to recruit new businesses to the commercial corridors and support current businesses.</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>SSA #24 Advertising and Promotion</h3><span class="tag">Advertising</span><p>RPBA develops promotional campaigns and retention/attraction marketing materials for businesses within SSA #24.</p><blockquote>We develop promotions, campaigns and business retention and attraction materials.</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>SSA #24 Marketing (District Marketing &amp; Public Art Funding)</h3><span class="tag">Advertising</span><span class="tag">Market Plan Development</span><p>RPBA markets SSA #24&#x27;s business districts, organizing and funding district events and public art programming.</p><blockquote>We market the business districts within SSA #24 by organizing and providing funding to events and public art programs such as Celebrate Clark Street World Music Festival</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>SSA #24 Outreach</h3><span class="tag">One-on-One Counseling</span><p>RPBA staff conduct direct business outreach visits within SSA #24 to deliver technical assistance and connect owners to available resources.</p><blockquote>We visit businesses within the SSA to provide technical assistance and ensure that business owners are aware of all the programs, services and resources available to them.</blockquote><div class="meta"><a href="https://rpba.org/ssa-24/" rel="noopener nofollow">https://rpba.org/ssa-24/</a></div></div>
+<div class="svc"><h3>Jarvis Square Alfresco</h3><span class="tag">Conference/Meeting and Event Space</span><p>RPBA-run public space in Jarvis Square offering outdoor seating, landscaping, and hosting family-friendly programming and events.</p><blockquote>The Alfresco program provides greenery and lush landscaping, murals/pavement art and decorative seating to beautify the space and make it more jovial and accessible</blockquote><div class="meta"><a href="https://rpba.org/jarvis-square-alfresco/" rel="noopener nofollow">https://rpba.org/jarvis-square-alfresco/</a></div></div>
+<div class="svc"><h3>Rogers Park Business Directories (Dine/Shop/Explore)</h3><span class="tag">Advertising</span><p>RPBA maintains searchable restaurant, shop, and entertainment directories to market Rogers Park businesses to residents and visitors.</p><blockquote>Find interesting and unique shops in our shop directory.</blockquote><div class="meta"><a href="https://www.rpba.org/" rel="noopener nofollow">https://www.rpba.org/</a></div></div>
+<div class="svc"><h3>Rogers Park Data (Demographic &amp; Market Data)</h3><span class="tag">Demographic and Census Data</span><span class="tag">Site Location Assistance</span><p>RPBA compiles and shares demographic, retail marketplace, and Tapestry consumer segmentation data to help businesses evaluate or select a location.</p><blockquote>Rogers Park Business Alliance gathers data to provide the best picture to businesses looking for a location to open their new business or expand their business.</blockquote><div class="meta"><a href="https://rpba.org/rogers-park-data/" rel="noopener nofollow">https://rpba.org/rogers-park-data/</a></div></div>
+<div class="svc"><h3>Corridor Planning &amp; Development Plans</h3><span class="tag">Economic Development</span><span class="tag">Site Location Assistance</span><p>RPBA authors commercial corridor plans and development guidelines that shape business investment along Rogers Park&#x27;s commercial streets.</p><blockquote>Rogers Park Business Alliance has led planning efforts on Morse Avenue, Howard Street, Western Avenue and Sheridan Road.</blockquote><div class="meta"><a href="https://rpba.org/planning-for-the-future/" rel="noopener nofollow">https://rpba.org/planning-for-the-future/</a></div></div>
+<div class="svc"><h3>Special Service Areas (SSA) Administration</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>RPBA directly administers multiple Special Service Areas (Howard St/Evanston SSA #10, Howard St SSA #19, Clark/Morse/Glenwood SSA #24, Devon Ave SSA #43, Sheridan Rd SSA #54) providing commercial corridor revitalization.</p><blockquote>RPBA administers three Special Service Areas offering commercial corridor revitalization to Howard Street Evanston SSA #10, Howard Street SSA #19</blockquote><div class="meta"><a href="https://rpba.org/about-us/" rel="noopener nofollow">https://rpba.org/about-us/</a></div></div>
+<div class="svc"><h3>Public Art Program (Mile of Murals)</h3><span class="tag">Revitalization</span><p>RPBA runs its own public art initiative, commissioning murals, sculptures, and yarn bombings throughout Rogers Park, including the Mile of Murals project.</p><blockquote>We have conducted yarn bombings and have worked with amazing artists to produce murals and sculptures throughout Rogers Park.</blockquote><div class="meta"><a href="https://rpba.org/about-us/" rel="noopener nofollow">https://rpba.org/about-us/</a></div></div>
+<div class="svc"><h3>Live Love Shop Rogers Park (Shop Local Campaign)</h3><span class="tag">Advertising</span><p>RPBA&#x27;s own annual holiday shop-local marketing campaign encouraging residents to patronize Rogers Park businesses.</p><blockquote>Live Love Shop Rogers Park is our annual holiday, shop local campaign.</blockquote><div class="meta"><a href="https://rpba.org/about-us/" rel="noopener nofollow">https://rpba.org/about-us/</a></div></div>
+<div class="svc"><h3>One Howard Street Corridor Recovery Plan</h3><span class="tag">Economic Development</span><span class="tag">Revitalization</span><p>RPBA-led economic recovery and development plan for the Howard Street corridor, developed with business and civic leaders on both the Chicago and Evanston sides of the border.</p><blockquote>One Howard Street is an economic recovery plan for a corridor with a storied history and a promising future.</blockquote><div class="meta"><a href="https://rpba.org/one-howard/" rel="noopener nofollow">https://rpba.org/one-howard/</a></div></div>
+<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
+Page generee le 2026-08-15. Chaque service publie cite le site de
+l'organisation qui le fournit.</footer>
+</div></body></html>
