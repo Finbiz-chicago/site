@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Architecture - FinBiz</title>
-<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<meta name="description" content="The verified directory of Chicago business-support organisations">
 <style>
 :root{
   --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
@@ -76,62 +76,62 @@ footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
   font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
 </style></head><body>
 <header class="top"><div class="wrap">
-<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Accueil</a><a href="architecture.html" aria-current=page>Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html">Executer</a><a href="contribute.html">Contribuer</a><a href="directory/index.html">Repertoire</a></nav>
+<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Home</a><a href="architecture.html" aria-current=page>Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html">Run it</a><a href="contribute.html">Contribute</a><a href="directory/index.html">Directory</a></nav>
 </div></header>
 <div class="wrap">
 
 <h1>Architecture</h1>
-<p class="lede">Cinq systemes, un sens de circulation. Les donnees vont de gauche a droite et
-ne reviennent jamais.</p>
+<p class="lede">Five systems, one direction of travel. Data flows left to right and never comes
+back.</p>
 
 <div class="scroll"><pre>
-  SOURCES                COLLECTE              STOCKAGE           USAGES
-  publiques
+  PUBLIC                 COLLECTION            STORAGE            USES
+  SOURCES
 
-  sites des        +--------------+       +--------------+    +---------------+
-  organisations -->|   scraper    |------>|   paquets    |--->|  repertoire   |
-                   |              |       |  un dossier  |    |  public (ce   |
-  pages            | verifie la   |       |  par organi- |    |  site)        |
-  archivees     -->| citation     |       |  sation      |    +---------------+
+  organisation     +--------------+       +--------------+    +---------------+
+  websites      -->|   scraper    |------>|   packages   |--->|    public     |
+                   |              |       |  one folder  |    |   directory   |
+  archived         | verifies the |       |  per organi- |    |  (this site)  |
+  pages         -->| quote        |       |  sation      |    +---------------+
                    +--------------+       +------+-------+
                                                  |            +---------------+
                                                  +----------->|  SourceLink   |
-                                                 |            |  (annuaire    |
-                                                 |            |   partenaire) |
+                                                 |            |   (partner    |
+                                                 |            |   directory)  |
                                                  |            +---------------+
                                                  v
                                           +--------------+    +---------------+
-                                          |     RAG      |--->|   chatbot     |
-                                          | base indexee |    | repond avec   |
-                                          +--------------+    | ses sources   |
+                                          |     RAG      |--->|    chatbot    |
+                                          |  indexed DB  |    | answers with  |
+                                          +--------------+    | its sources   |
                                                               +---------------+
 </pre></div>
 
-<h2>Les depots</h2>
+<h2>The repositories</h2>
 <table class="kv">
-<tr><td>site (public)</td><td>Ce que vous lisez. Ne contient que du HTML genere. Aucune
-source, aucune donnee brute, aucun secret.</td></tr>
-<tr><td>scraper</td><td>Collecte et verification. Produit les paquets. C'est le depot qui
-porte la garantie de citation.</td></tr>
-<tr><td>rag</td><td>Indexation des paquets et recherche. Repond a une question par des
-extraits et leurs sources.</td></tr>
-<tr><td>chatbot</td><td>L'interface de conversation publique et son orchestration.</td></tr>
-<tr><td>dashboard</td><td>Outil interne de suivi et de correction. Non expose.</td></tr>
-<tr><td>taxonomy</td><td>Le referentiel de categories, partage avec les partenaires de
-relecture. Prive, et il le reste.</td></tr>
-<tr><td>stack</td><td>Le fichier de composition qui demarre l'ensemble sur une machine.</td></tr>
+<tr><td>site (public)</td><td>What you are reading. Generated HTML only. No sources, no raw
+data, no secrets.</td></tr>
+<tr><td>scraper</td><td>Collection and verification. Produces the packages. This is the repo
+that carries the citation guarantee. It also holds the generator for this site.</td></tr>
+<tr><td>rag</td><td>Indexes the packages and searches them. Answers a question with passages
+and their sources.</td></tr>
+<tr><td>chatbot</td><td>The public conversation interface and its orchestration.</td></tr>
+<tr><td>dashboard</td><td>Internal tracking and correction tool. Not exposed.</td></tr>
+<tr><td>taxonomy</td><td>The category reference, shared with the review partners. Private, and
+it stays private.</td></tr>
+<tr><td>stack</td><td>The compose file that starts everything on one machine.</td></tr>
 </table>
 
-<h2>Trois choses a savoir avant de lire du code</h2>
-<p><strong>Le paquet est le format pivot.</strong> Tout ce qui est en aval - ce site,
-l'annuaire partenaire, le RAG - lit des paquets. Rien en aval ne rappelle le scraper. Si
-vous changez le format du paquet, vous changez tout le systeme d'un coup.</p>
-<p><strong>Le sens de circulation est une garantie, pas une habitude.</strong> Le depot
-public ne recoit que du genere. Ce qui est visible n'est donc jamais un accident.</p>
-<p><strong>Certaines pieces sont gelees.</strong> Le referentiel de categories et l'etape
-d'extraction ne se modifient pas au fil de l'eau. La page Contribuer dit pourquoi.</p>
+<h2>Three things to know before reading any code</h2>
+<p><strong>The package is the pivot format.</strong> Everything downstream reads packages: this
+site, the partner directory, the RAG. Nothing downstream calls back to the scraper. Change the
+package format and you change the whole system at once.</p>
+<p><strong>The direction of travel is a guarantee, not a habit.</strong> The public repository
+receives generated output and nothing else, so what is visible is never an accident.</p>
+<p><strong>Some pieces are frozen.</strong> The category reference and the extraction step are
+not changed casually. The Contribute page says why.</p>
 
-<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
-Page generee le 2026-08-16. Chaque service publie cite le site de
-l'organisation qui le fournit.</footer>
+<footer>FinBiz - The verified directory of Chicago business-support organisations.<br>
+Generated 2026-08-16. Every published service quotes the website of the
+organisation that provides it.</footer>
 </div></body></html>

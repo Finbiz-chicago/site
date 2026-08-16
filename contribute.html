@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contribuer - FinBiz</title>
-<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<title>Contribute - FinBiz</title>
+<meta name="description" content="The verified directory of Chicago business-support organisations">
 <style>
 :root{
   --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
@@ -76,49 +76,48 @@ footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
   font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
 </style></head><body>
 <header class="top"><div class="wrap">
-<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Accueil</a><a href="architecture.html">Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html">Executer</a><a href="contribute.html" aria-current=page>Contribuer</a><a href="directory/index.html">Repertoire</a></nav>
+<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Home</a><a href="architecture.html">Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html">Run it</a><a href="contribute.html" aria-current=page>Contribute</a><a href="directory/index.html">Directory</a></nav>
 </div></header>
 <div class="wrap">
 
-<h1>Contribuer</h1>
-<p class="lede">Ou aller selon ce que vous voulez changer, et les trois regles qui ne se
-contournent pas.</p>
+<h1>Contribute</h1>
+<p class="lede">Where to go depending on what you want to change, and the three rules that are
+not negotiable.</p>
 
-<h2>Quel depot</h2>
+<h2>Which repository</h2>
 <table class="kv">
-<tr><td>Une donnee fausse<br>sur une organisation</td><td>Ouvrez une issue sur
-<code>scraper</code> avec le lien de la page qui contredit. Une correction sans source ne
-peut pas etre appliquee.</td></tr>
-<tr><td>La collecte ou<br>la verification</td><td><code>scraper</code></td></tr>
-<tr><td>La recherche<br>ou les reponses</td><td><code>rag</code></td></tr>
-<tr><td>L'interface<br>de conversation</td><td><code>chatbot</code></td></tr>
-<tr><td>Le demarrage,<br>le deploiement</td><td><code>stack</code></td></tr>
-<tr><td>Ce site</td><td>Le generateur vit dans un depot prive. Le depot public ne recoit que
-du HTML genere : une modification faite directement dedans serait effacee a la prochaine
-construction.</td></tr>
+<tr><td>Wrong information<br>about an organisation</td><td>Open an issue on <code>scraper</code>
+with the link to the page that contradicts it. A correction without a source cannot be
+applied.</td></tr>
+<tr><td>An organisation wants its<br>listing changed or removed</td><td><code>scraper</code>.
+The site is regenerated from the packages by <code>site/build_site.py</code> in that
+repository, then the generated HTML is pushed to the public repo.</td></tr>
+<tr><td>Collection or<br>verification</td><td><code>scraper</code></td></tr>
+<tr><td>Search or answers</td><td><code>rag</code></td></tr>
+<tr><td>The conversation<br>interface</td><td><code>chatbot</code></td></tr>
+<tr><td>Startup, deployment</td><td><code>stack</code></td></tr>
+<tr><td>This site</td><td>The public repository receives generated HTML only. Editing it
+directly would be overwritten by the next build.</td></tr>
 </table>
 
-<h2>Les trois regles</h2>
-<p><strong>1. Une citation ne se contourne pas.</strong> Aucune modification ne doit permettre
-de publier un service sans extrait verbatim et sans lien. Ce n'est pas une consigne, c'est un
-controle automatique : une construction qui trouverait un service sans citation refuse
-d'ecrire quoi que ce soit.</p>
-<p><strong>2. Le referentiel de categories est gele.</strong> Il est partage avec les
-partenaires qui relisent le repertoire. Un code ajoute unilateralement casse leur travail
-sans qu'ils le sachent. Les propositions passent par une issue, jamais par une modification
-directe.</p>
-<p><strong>3. Certains champs ne sont jamais poses par une machine.</strong> Le marquage
-d'une specialite est une decision humaine. Un programme qui le remplirait produirait une
-affirmation que personne n'a validee, avec l'apparence d'une donnee verifiee.</p>
+<h2>The three rules</h2>
+<p><strong>1. A citation cannot be bypassed.</strong> No change may allow a service to be
+published without a verbatim quote and a link. This is not advice, it is an automatic check: a
+build that finds a service without one refuses to write anything at all.</p>
+<p><strong>2. The category reference is frozen.</strong> It is shared with the partners who
+review the directory. A code added unilaterally breaks their work without their knowing.
+Proposals go through an issue, never a direct edit.</p>
+<p><strong>3. Some fields are never set by a machine.</strong> Marking a speciality is a human
+decision. A program that filled it in would produce a claim nobody validated, wearing the
+appearance of verified data.</p>
 
-<h2>Pourquoi ces regles existent</h2>
-<p>Elles ne sont pas des precautions de principe. Chacune vient d'un echec observe. Un
-annuaire dont personne ne peut verifier une ligne ne vaut pas mieux qu'une rumeur bien mise
-en page, et une regle qui vit seulement dans la tete de quelqu'un disparait avec cette
-personne. C'est pour cette raison que les regles ci-dessus sont, autant que possible,
-appliquees par des programmes plutot qu'ecrites dans un document.</p>
+<h2>Why these rules exist</h2>
+<p>They are not precautions in principle. Each one comes from an observed failure. A directory
+where nobody can check a single line is no better than a well-formatted rumour, and a rule that
+lives only in one person's head disappears with that person. That is why the rules above are, as
+far as possible, enforced by programs rather than written in a document.</p>
 
-<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
-Page generee le 2026-08-16. Chaque service publie cite le site de
-l'organisation qui le fournit.</footer>
+<footer>FinBiz - The verified directory of Chicago business-support organisations.<br>
+Generated 2026-08-16. Every published service quotes the website of the
+organisation that provides it.</footer>
 </div></body></html>

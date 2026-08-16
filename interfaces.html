@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Interfaces - FinBiz</title>
-<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<meta name="description" content="The verified directory of Chicago business-support organisations">
 <style>
 :root{
   --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
@@ -76,75 +76,76 @@ footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
   font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
 </style></head><body>
 <header class="top"><div class="wrap">
-<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Accueil</a><a href="architecture.html">Architecture</a><a href="interfaces.html" aria-current=page>Interfaces</a><a href="run.html">Executer</a><a href="contribute.html">Contribuer</a><a href="directory/index.html">Repertoire</a></nav>
+<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Home</a><a href="architecture.html">Architecture</a><a href="interfaces.html" aria-current=page>Interfaces</a><a href="run.html">Run it</a><a href="contribute.html">Contribute</a><a href="directory/index.html">Directory</a></nav>
 </div></header>
 <div class="wrap">
 
 <h1>Interfaces</h1>
-<p class="lede">Ce que chaque systeme recoit, ce qu'il rend, et ce qu'il garantit. La methode
-employee pour y arriver n'est pas publique.</p>
+<p class="lede">What each system receives, what it returns, and what it guarantees. The method
+used to get there is not public.</p>
 
 <h2>Scraper</h2>
 <table class="kv">
-<tr><td>Entree</td><td>Une organisation et l'adresse de son site.</td></tr>
-<tr><td>Sortie</td><td>Un paquet : profil de l'organisation, liste de services, et pour
-chaque service un extrait verbatim avec l'adresse de la page qui le porte.</td></tr>
-<tr><td>Garantie</td><td>Tout service rendu porte un extrait d'au moins huit mots, present
-litteralement sur une page de l'organisation. Les comparaisons ignorent les espaces et les
-caracteres invisibles. Un service sans extrait n'est jamais rendu.</td></tr>
-<tr><td>Limites</td><td>Un site qui refuse les acces automatises ne produit pas de paquet.
-L'echec est enregistre comme tel, jamais comble par une supposition.</td></tr>
-<tr><td>Non public</td><td>La strategie d'exploration, l'extraction, le codage des services
-et le detail des controles internes.</td></tr>
+<tr><td>In</td><td>An organisation and the address of its website.</td></tr>
+<tr><td>Out</td><td>A package: the organisation profile, a list of services, and for each
+service a verbatim quote with the address of the page carrying it.</td></tr>
+<tr><td>Guarantee</td><td>Every service returned carries a quote of at least eight words,
+present literally on a page belonging to the organisation. Comparison ignores whitespace,
+invisible characters, and typographic variants of the same character. A service without a
+quote is never returned.</td></tr>
+<tr><td>Limits</td><td>A site that refuses automated requests produces no package. The failure
+is recorded as a failure, never filled in with a guess.</td></tr>
+<tr><td>Not public</td><td>The crawl strategy, the extraction, the coding of services, and the
+detail of the internal checks.</td></tr>
 </table>
 
 <h2>RAG</h2>
 <table class="kv">
-<tr><td>Entree</td><td>Une question en langage naturel.</td></tr>
-<tr><td>Sortie</td><td>Des passages pertinents, chacun accompagne de l'organisation et de
-l'adresse dont il provient.</td></tr>
-<tr><td>Garantie</td><td>Aucun passage rendu sans sa source. Le systeme ne repond que sur le
-contenu des paquets ; il ne complete pas avec des connaissances generales.</td></tr>
-<tr><td>Limites</td><td>Ce qui n'est pas dans un paquet n'existe pas pour lui. Une reponse
-vide est une reponse valide.</td></tr>
-<tr><td>Non public</td><td>Le decoupage, la representation vectorielle, la recuperation et
-le classement.</td></tr>
+<tr><td>In</td><td>A question in plain language.</td></tr>
+<tr><td>Out</td><td>Relevant passages, each with the organisation and the address it came
+from.</td></tr>
+<tr><td>Guarantee</td><td>No passage without its source. The system answers from the content of
+the packages; it does not fill gaps with general knowledge.</td></tr>
+<tr><td>Limits</td><td>What is not in a package does not exist for it. An empty answer is a
+valid answer.</td></tr>
+<tr><td>Not public</td><td>Chunking, vector representation, retrieval and ranking.</td></tr>
 </table>
 
 <h2>Chatbot</h2>
 <table class="kv">
-<tr><td>Entree</td><td>Un message, envoye a un point d'entree HTTP.</td></tr>
-<tr><td>Sortie</td><td>Une reponse redigee, avec les sources qui la soutiennent.</td></tr>
-<tr><td>Garantie</td><td>Les sources affichees sont celles rendues par le RAG, sans ajout.</td></tr>
-<tr><td>Non public</td><td>L'orchestration et les instructions donnees au modele.</td></tr>
+<tr><td>In</td><td>A message, sent to an HTTP endpoint.</td></tr>
+<tr><td>Out</td><td>A written answer with the sources that support it.</td></tr>
+<tr><td>Guarantee</td><td>The sources shown are the ones the RAG returned, with nothing
+added.</td></tr>
+<tr><td>Not public</td><td>The orchestration and the instructions given to the model.</td></tr>
 </table>
 
-<h2>Repertoire public</h2>
+<h2>Public directory</h2>
 <table class="kv">
-<tr><td>Entree</td><td>Les paquets.</td></tr>
-<tr><td>Sortie</td><td>Des pages HTML statiques, sans script ni appel reseau.</td></tr>
-<tr><td>Garantie</td><td>Rien n'est affiche sans sa citation et son lien. La construction
-echoue plutot que de publier une exception.</td></tr>
+<tr><td>In</td><td>The packages.</td></tr>
+<tr><td>Out</td><td>Static HTML pages, with no scripts and no network calls.</td></tr>
+<tr><td>Guarantee</td><td>Nothing is displayed without its quote and its link. The build fails
+rather than publish an exception.</td></tr>
 </table>
 
-<h2>Le format pivot</h2>
-<p>Un paquet est un dossier par organisation. Les consommateurs en aval ne lisent que ces
-deux fichiers :</p>
+<h2>The pivot format</h2>
+<p>A package is one folder per organisation. Downstream consumers read only these two
+files:</p>
 <div class="scroll"><pre>
-organization_profile.json    identite, adresse, contacts, mission
-services_programs.json       liste de services ; par service :
-                               canonical_name           le nom du service
-                               description              ce qu'il fait
-                               grounding_quote          l'extrait verbatim
-                               source_urls              ou l'extrait se trouve
-                               service_classifications  ses categories
-                               review_decision          l'etat de relecture
+organization_profile.json    identity, address, contacts, mission
+services_programs.json       list of services; per service:
+                               canonical_name           the service name
+                               description              what it does
+                               grounding_quote          the verbatim quote
+                               source_urls              where the quote lives
+                               service_classifications  its categories
+                               review_decision          the review state
 </pre></div>
-<p class="note">Un service dont la decision commence par <code>NOT a SourceLink service</code>
-a ete ecarte volontairement, avec sa raison ecrite. Il reste dans le paquet : une exclusion
-tracee vaut mieux qu'une suppression silencieuse.</p>
+<p class="note">A service whose decision begins <code>NOT a SourceLink service</code> was set
+aside deliberately, with its reason written down. It stays in the package: a recorded exclusion
+is worth more than a silent deletion.</p>
 
-<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
-Page generee le 2026-08-16. Chaque service publie cite le site de
-l'organisation qui le fournit.</footer>
+<footer>FinBiz - The verified directory of Chicago business-support organisations.<br>
+Generated 2026-08-16. Every published service quotes the website of the
+organisation that provides it.</footer>
 </div></body></html>

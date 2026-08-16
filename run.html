@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Executer - FinBiz</title>
-<meta name="description" content="Le repertoire verifie des organisations de soutien aux entreprises de Chicago">
+<title>Run it - FinBiz</title>
+<meta name="description" content="The verified directory of Chicago business-support organisations">
 <style>
 :root{
   --bg:#fbfaf8; --panel:#ffffff; --ink:#1c1a17; --muted:#6b6459; --line:#e3ddd3;
@@ -76,47 +76,53 @@ footer{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.2rem;
   font-size:.82rem;color:var(--muted);font-family:ui-sans-serif,system-ui,sans-serif}
 </style></head><body>
 <header class="top"><div class="wrap">
-<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Accueil</a><a href="architecture.html">Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html" aria-current=page>Executer</a><a href="contribute.html">Contribuer</a><a href="directory/index.html">Repertoire</a></nav>
+<a class="brand" href="index.html">FinBiz</a><nav><a href="index.html">Home</a><a href="architecture.html">Architecture</a><a href="interfaces.html">Interfaces</a><a href="run.html" aria-current=page>Run it</a><a href="contribute.html">Contribute</a><a href="directory/index.html">Directory</a></nav>
 </div></header>
 <div class="wrap">
 
-<h1>Executer</h1>
-<p class="lede">Le systeme demarre depuis un clone vide. Ce qui manque, vous l'apportez, et
-c'est dit avant que vous lanciez quoi que ce soit.</p>
+<h1>Run it</h1>
+<p class="lede">The system starts from an empty clone. What is missing, you bring, and you are
+told before you start rather than after.</p>
 
-<h2>Ce qu'il faut avoir</h2>
+<h2>What you need</h2>
 <table class="kv">
-<tr><td>Docker</td><td>avec le plugin Compose.</td></tr>
-<tr><td>Disque</td><td>environ 3 Go, dont la base de connaissances.</td></tr>
-<tr><td>Vos propres cles</td><td>Le scraper appelle un modele de langage pour l'etape
-d'extraction. <strong>Aucune cle n'est fournie</strong> : vous utilisez votre compte. Sans
-cle, tout le reste demarre et seule l'extraction est indisponible.</td></tr>
+<tr><td>Docker</td><td>with the Compose plugin.</td></tr>
+<tr><td>Disk</td><td>about 3 GB, including the knowledge base.</td></tr>
+<tr><td>Your own keys</td><td>The scraper calls a language model for the extraction step.
+<strong>No key is provided</strong>: you use your own account. Without one, everything else
+starts and only extraction is unavailable.</td></tr>
 </table>
 
-<h2>Demarrer</h2>
+<h2>Start</h2>
 <div class="scroll"><pre>
-git clone https://github.com/finbiz/stack.git
+git clone https://github.com/Finbiz-chicago/stack.git
 cd stack
-cp .env.example .env        # remplissez les valeurs, aucune n'est pre-remplie
-./bootstrap.sh              # telecharge les donnees, restaure, demarre
+cp .env.example .env        # fill it in; nothing is pre-filled
+./bootstrap.sh              # downloads the data, restores it, starts
 </pre></div>
-<p>La pile s'ecoute sur des ports locaux. Elle ne suppose ni proxy inverse, ni nom de
-domaine, ni certificat : elle fonctionne sur une machine nue.</p>
+<p>The stack listens on local ports. It assumes no reverse proxy, no domain name and no
+certificate: it runs on a bare machine.</p>
 
-<h2>Verifier que ca marche</h2>
+<h2>Prove it works</h2>
 <div class="scroll"><pre>
 ./smoke-test.sh
 </pre></div>
-<p>Le test interroge reellement la base et le service de conversation. Il echoue si une
-variable manque ou si les donnees n'ont pas ete restaurees : un test qui ne sait pas dire
-non ne dit rien quand il dit oui.</p>
+<p>The test queries the database and the services for real. It fails if a variable is missing or
+the data was not restored, and <code>--self-check</code> proves it can fail at all: a test that
+cannot say no says nothing when it says yes.</p>
 
-<h2>Ce qui ne demarre pas depuis un clone</h2>
-<p>L'entree des donnees dans l'annuaire partenaire se pilote depuis un navigateur ou une
-personne s'est connectee elle-meme. C'est volontaire : aucun identifiant d'annuaire n'existe
-cote serveur, et aucun programme n'en detient.</p>
+<h2>One manual step the test does not cover</h2>
+<p>The chat interface serves its page as soon as the stack is up, but <strong>question and
+answer stays dead until the n8n workflows are imported</strong> from
+<code>services/chat/n8n_workflows/</code> and their credentials entered by hand. Nothing ships
+with credentials. Expect this on day one; it is not a fault.</p>
 
-<footer>FinBiz - Le repertoire verifie des organisations de soutien aux entreprises de Chicago.<br>
-Page generee le 2026-08-16. Chaque service publie cite le site de
-l'organisation qui le fournit.</footer>
+<h2>What does not start from a clone</h2>
+<p>Entering records into the partner directory is driven from a browser where a person has
+logged in themselves. No directory credential exists on the server and no program holds one.
+That is a deliberate constraint, not a gap.</p>
+
+<footer>FinBiz - The verified directory of Chicago business-support organisations.<br>
+Generated 2026-08-16. Every published service quotes the website of the
+organisation that provides it.</footer>
 </div></body></html>
