@@ -1,28 +1,61 @@
-# finbiz.cloud — le site public
+<p align="center"><img src="docs/banner.png" alt="" width="100%"></p>
 
-Ce dépôt ne contient **que du HTML généré**. Aucune source, aucune donnée brute, aucun secret.
+<h1 align="center">site</h1>
+<p align="center"><em>The public face of FinBiz, at <a href="https://finbiz.cloud">finbiz.cloud</a>. Generated HTML and nothing else.</em></p>
 
-Il est produit à partir des paquets du dépôt `scraper` par un générateur qui vit dans un dépôt
-privé. Une modification faite directement ici serait écrasée à la prochaine génération.
+---
 
-## Ce que le site contient
+This repository holds **no source, no raw data and no secrets**. It receives HTML produced from
+the packages in the private `scraper` repository, and receives it in one direction only. What
+is publicly visible is therefore never an accident: it is only ever what a command deliberately
+produced.
 
-- ce qu'est FinBiz, en une page
-- comment les dépôts s'articulent, et lequel ouvrir
-- les interfaces : ce que chaque système reçoit, rend et garantit
-- comment exécuter la pile depuis un clone vide
-- le répertoire des organisations, en lecture seule
+Editing a page here would be overwritten by the next build.
 
-## La règle du site
+## What the site contains
 
-Un service n'apparaît que s'il est accompagné d'un extrait d'au moins huit mots, présent mot
-pour mot sur une page de l'organisation qui le fournit, et du lien vers cette page. La
-génération **refuse d'écrire** si un service manque à cette règle : ce n'est pas une consigne,
-c'est un contrôle.
+- what FinBiz is, in one page
+- how the repositories fit together, and which one to open
+- the interfaces: what each system receives, returns and guarantees
+- how to run the stack from an empty clone
+- the directory itself, read-only
 
-## Vérification
+Five pages, about fifteen minutes end to end. It is written for a developer arriving with no
+context.
 
-`.gitleaks-baseline.json` enregistre la seule détection connue, une chaîne longue contenue
-dans une citation publique. Le contrôle signale toute détection *nouvelle*.
+## The rule it publishes under
 
-    gitleaks detect --source . --no-git --baseline-path .gitleaks-baseline.json
+> A service appears only if it comes with a quote of at least eight words, present word for
+> word on a page belonging to the organisation that provides it, together with the link.
+
+The build **refuses to write anything at all** if it finds a service that breaks this. That is
+not a guideline enforced by care; it is a check that stops the build.
+
+What does not clear the bar is not deleted. It is set aside and counted on the page itself:
+services excluded by written decision, services withheld because the quote is a paraphrase, and
+organisations awaiting a confirmation only they can give.
+
+## How it is published
+
+From the `scraper` repository:
+
+```bash
+cd site
+./publish.sh --dry-run     # regenerate and check, publish nothing
+./publish.sh               # regenerate, check, commit, push
+```
+
+That procedure refuses to publish if a publication rule breaks, if the two independent checks
+disagree on the number of services, or if the leak scan finds anything new. It also preserves
+this repository's own files, and will not attach a custom domain before DNS actually points
+here — both lessons learned the hard way.
+
+## Checking it
+
+```bash
+gitleaks detect --source . --no-git --redact --baseline-path .gitleaks-baseline.json
+```
+
+The baseline records the one known detection: a long string inside a passage quoted from Rogers
+Park Business Alliance's own website. Any **new** detection still reports. The baseline and the
+scan must use the same options, `--redact` included — a fingerprint includes the matched value.
